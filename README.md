@@ -3,7 +3,13 @@
 
 ## Descripción
 
-Desarrollo de proyecto final para el Bootcamp de Frontend con especialización en React, de Bogotá institute technology. Donde se presenta el consumo de una API y proceso de CRUD a la misma. 
+Se conforma grupo para la creación del proyecto final, el team llevará por nombre DREAM DEVELOPERS el cual se encuentra conformado por tres integrantes Luisa Díaz Sandoval, Eusbeidy Pérez y Mariangel Socorro actualmente estudiantes de BIT - Bogota Institute of Thecnology. 
+
+En conjunto establecemos identidad del grupo como el nombre del team, logo del equipo, colores, fuentes delegados y horarios de trabajo. 
+
+![logo](./src/img/logo.png)
+
+Iniciamos el desarrollo de proyecto final para el Bootcamp de Frontend con especialización en React, de Bogotá institute of technology. Donde se presenta el consumo de una API y proceso de CRUD a la misma. 
 
 La  API es publica y trata sobre concursos de programación por lo que se realizará el proyecto llamando a la API para mostrar información de los concursos y en las operaciones CRUD desarrollaremos opciones que permitirán actualizar, eliminar y agregar información. 
 
@@ -17,14 +23,21 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
 
 
 ### Construcción de ruta de estilos. 
-- Fuentes PHILOSOPHER, Tilt neon.  Recurso: Google Fonts
-- Designación de colores:  #F99730, #000000, #FFDE59. 
-- Wireframe de baja. ![Wireframe](./src/img/w1.jpeg)
-- Wireframe de alta.
+- Fuentes PHILOSOPHER, TILT NEON.  Recurso: Google Fonts
+- Designación de colores:  #F99730  #000000 #FFDE59  
+- Wireframe de baja. 
+
+![Wireframe de baja](./src/img/w1.jpg) 
+![Wireframe de baja 2](./src/img/w2.jpg)
+
+- Wireframe de alta. 
+
+![Wireframe de alta](./src/img/w3.jpg) 
+![Wireframe de alta 2](./src/img/w4.jpg)
 
 ### Tecnologías a utilizar. 
 1. Lenguajes de programación.
-    - JavaScript. 
+    - JavaScript
 2. Lenguajes de marcado. 
     - HTML
     - CSS
@@ -40,7 +53,7 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
 
 ## Autores 
 
-[Eusbeidy Pérez](https://www.linkedin.com/in/eusbeidy-perez)
-[Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
-[Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
+- [Eusbeidy Pérez](https://www.example.com)
+- [Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
+- [Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
 
