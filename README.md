@@ -1,7 +1,7 @@
 
-# bit10team
+# Dreams Developers
 
-## Descripción
+## Descripción  :bookmark_tabs:
 
 Se conforma grupo para la creación del proyecto final, el team llevará por nombre DREAM DEVELOPERS el cual se encuentra conformado por tres integrantes Luisa Díaz Sandoval, Eusbeidy Pérez y Mariangel Socorro actualmente estudiantes de BIT - Bogota Institute of Thecnology. 
 
@@ -9,14 +9,14 @@ En conjunto establecemos identidad del grupo como el nombre del team, logo del e
 
 ![logo](./src/img/logo.png)
 
-Iniciamos el desarrollo de proyecto final para el Bootcamp de Frontend con especialización en React, de Bogotá institute of technology. Donde se presenta el consumo de una API y proceso de CRUD a la misma. 
+ Este es el proyecto final del Boocampt de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos de programación y a la cual se le puede ejecutar los procesos de: **crear,leer,actulizar y eliminar** su contenido.  
 
-La  API es publica y trata sobre concursos de programación por lo que se realizará el proyecto llamando a la API para mostrar información de los concursos y en las operaciones CRUD desarrollaremos opciones que permitirán actualizar, eliminar y agregar información. 
 
-### Delegados
-- Repositorio y despliegue del proyecto -> Luisa Díaz Sandoval
-- Documentación -> Mariangel Socorro
-- Wireframe de alta -> Eusbeidy Pérez
+
+### Delegados :busts_in_silhouette:
+-  :dizzy: ***Luisa Díaz Sandoval***  :dizzy:  Repositorio y despliegue del proyecto 
+-  :dizzy: ***Mariangel Socorro*** :dizzy: Documentación  
+- :dizzy: ***Eusbeidy Pérez*** :dizzy:  Wireframe de alta  
 
 ### Tareas conjuntas
 - Construcción Wirefame de baja -> Todo el equipo
@@ -24,16 +24,53 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
 
 ### Construcción de ruta de estilos. 
 - Fuentes PHILOSOPHER, TILT NEON.  Recurso: Google Fonts
-- Designación de colores:  #F99730  #000000 #FFDE59  
+- Designación de colores: 
+`#F99730`:orange_circle:
+`#000000`:black_circle:
+`#FFDE59`:yellow_circle:
+
 - Wireframe de baja. 
 
-![Wireframe de baja](./src/img/w1.jpg) 
-![Wireframe de baja 2](./src/img/w2.jpg)
+![Wireframe de baja](./src/img/w1.jpg "Wireframe de baja") 
+![Wireframe de baja 2](./src/img/w2.jpg "Wireframe de alta")
+
 
 - Wireframe de alta. 
 
 ![Wireframe de alta](./src/img/w3.jpg) 
 ![Wireframe de alta 2](./src/img/w4.jpg)
+
+
+- Logotipo:
+![logo](./src/img/logo.png )
+
+### Horarios
+
+╔═══════════╦══════════════════╗
+║ Lunes     ║ 6:00pm a 10:00pm ║
+╠═══════════╬══════════════════╣
+║ Martes    ║ 6:00pm a 10:00pm ║
+╠═══════════╬══════════════════╣
+║ Miércoles ║ 6:00pm a 10:00pm ║
+╠═══════════╬══════════════════╣
+║ Jueves    ║ 6:00pm a 10:00pm ║
+╠═══════════╬══════════════════╣
+║ Viernes   ║ 6:00pm a 10:00pm ║
+╠═══════════╬══════════════════╣
+║ Sábado    ║ 6:30pm a 7:30pm  ║
+╚═══════════╩══════════════════╝
+
+### Instalación. 
+_Asegurece que tenga instalado en su equipo npm para ello ejecute en la terminal el siguiente comando_
+```
+npm -v
+```
+
+_En el caso que ya cuente con este ejecute el comando a continuación,_ 
+```
+npm run dev
+```
+_de lo contario dirijase al siguiente_  [link](https://co.video.search.yahoo.com/search/video?fr=mcafee&ei=UTF-8&p=como+intalar+npm&type=E210CO91215G0#id=1&vid=e14ce88f632f4bcd22ceba395d2bb249&action=click)
 
 ### Tecnologías a utilizar. 
 1. Lenguajes de programación.
@@ -49,11 +86,13 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
     - Trello 
     - Canva
     - Ninja Mock
+    - Visual StudioCode
+    
 
 
 ## Autores 
 
-- [Eusbeidy Pérez](https://www.example.com)
+- [Eusbeidy Pérez](https://www.linkedin.com/in/eusbeidy-perez)
 - [Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
 - [Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
 
