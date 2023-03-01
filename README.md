@@ -24,14 +24,14 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
 
 ### Construcción de ruta de estilos. 
 - Fuentes PHILOSOPHER, TILT NEON.  Recurso: Google Fonts
-
 - Designación de colores:  #F99730  #000000 #FFDE59  
-
 - Wireframe de baja. 
+
 ![Wireframe de baja](./src/img/w1.jpg) 
 ![Wireframe de baja 2](./src/img/w2.jpg)
 
 - Wireframe de alta. 
+
 ![Wireframe de alta](./src/img/w3.jpg) 
 ![Wireframe de alta 2](./src/img/w4.jpg)
 
