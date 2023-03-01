@@ -53,7 +53,7 @@ La  API es publica y trata sobre concursos de programación por lo que se realiz
 
 ## Autores 
 
-[Eusbeidy Pérez](https://www.example.com)
-[Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
-[Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
+- [Eusbeidy Pérez](https://www.example.com)
+- [Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
+- [Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
 
