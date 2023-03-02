@@ -1,0 +1,47 @@
+.container{
+    padding-top: 2rem;
+}
+
+.card{
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.card img{
+    width: 50%;
+    
+    
+}
+
+
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgba(252, 151, 0, 0.273) !important;
+    transition: all 0.7s linear;
+  }
+  
+  .card-body {
+    padding: 2rem 0 !important;
+    height: 10%;
+    background-color:  rgba(255,222,89, 0.5) ;
+    
+  }
+  
+  .card-text {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .overflow {
+    overflow: hidden;
+  }
+  
+  .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.8);
+  }
