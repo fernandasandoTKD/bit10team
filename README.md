@@ -35,7 +35,7 @@
 
 
 - Logotipo:
-![logo](./src/img/logo.png )
+![logo](./src/img/logo.jpg )
 
 ### Horarios
 
