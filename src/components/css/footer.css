@@ -1,0 +1,19 @@
+/* footer */
+
+.navbar-nav {
+    justify-content: center;
+    margin: 0 auto;
+}
+.nav-item .nav-link, p{
+    color: #F99730;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #0000;
+}
+
+.text-center{
+    color: #F99730;
+}
