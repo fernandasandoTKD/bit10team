@@ -5,6 +5,7 @@ import logo2 from '../img/logo2.png';
 import Cards from './Cards';
 
 
+
 export const Nosotros = () => {
   return (
     <>
