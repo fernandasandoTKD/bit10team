@@ -2,6 +2,10 @@ import React, {useState, useEffect} from 'react'
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 
 
@@ -30,7 +34,10 @@ console.log('Upss.. hay un error')
 //componente interno o se puede crear en un componente aparte
 const getData = () => {
     const array = contests.map((contest, index) => 
-    <Card key={index}>
+
+   
+        <Card key={index}>
+        
     <Card.Title className='h2'>{contest.name}</Card.Title>
     <ListGroup className="list-group-flush">
     <ListGroup.Item><li className='h6'>Link de de accseso</li><Card.Link href="#">{contest.url}</Card.Link></ListGroup.Item>
@@ -39,7 +46,11 @@ const getData = () => {
     </ListGroup>
     <Button className='m-2' variant="primary">editar</Button>
     <Button className='m-2' variant="primary">eliminar</Button>
+    
     </Card>
+        
+    
+    
     
     )
     setData(array)
@@ -47,9 +58,11 @@ const getData = () => {
   return (
     <section>
         <h2 className='text-center py-4'>Pon a prueba tus conocimientos y participa en los mejores concusos y hackathones de programacion...</h2>
-        <Card className='m-5' style={{ width: '18rem' }}>
-      {data}
-    </Card>
+        
+        
+        <Card className='m-5 ' style={{ width: '18rem' }}>
+            {data} </Card>
+        
 
     </section>
   )

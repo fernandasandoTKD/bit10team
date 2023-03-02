@@ -3,14 +3,7 @@
 
 ## Descripción  :bookmark_tabs:
 
-Se conforma grupo para la creación del proyecto final, el team llevará por nombre DREAM DEVELOPERS el cual se encuentra conformado por tres integrantes Luisa Díaz Sandoval, Eusbeidy Pérez y Mariangel Socorro actualmente estudiantes de BIT - Bogota Institute of Thecnology. 
-
-En conjunto establecemos identidad del grupo como el nombre del team, logo del equipo, colores, fuentes delegados y horarios de trabajo. 
-
-![logo](./src/img/logo.png)
-
  Este es el proyecto final del Boocampt de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos de programación y a la cual se le puede ejecutar los procesos de: **crear,leer,actulizar y eliminar** su contenido.  
-
 
 
 ### Delegados :busts_in_silhouette:
@@ -46,19 +39,14 @@ En conjunto establecemos identidad del grupo como el nombre del team, logo del e
 
 ### Horarios
 
-╔═══════════╦══════════════════╗
-║ Lunes     ║ 6:00pm a 10:00pm ║
-╠═══════════╬══════════════════╣
-║ Martes    ║ 6:00pm a 10:00pm ║
-╠═══════════╬══════════════════╣
-║ Miércoles ║ 6:00pm a 10:00pm ║
-╠═══════════╬══════════════════╣
-║ Jueves    ║ 6:00pm a 10:00pm ║
-╠═══════════╬══════════════════╣
-║ Viernes   ║ 6:00pm a 10:00pm ║
-╠═══════════╬══════════════════╣
-║ Sábado    ║ 6:30pm a 7:30pm  ║
-╚═══════════╩══════════════════╝
+|    Días       |   Horario     |
+| ------------- | ------------- |
+| Lunes         | 6:00 a 10:00pm|
+| Martes        | 6:00 a 10:00pm|
+| Miécoles      | 6:00 a 10:00pm|
+| Jueves        | 6:00 a 10:00pm|
+| viernes       | 6:00 a 10:00pm|
+| Sábado        | 6:30 a 7:30pm |
 
 ### Instalación. 
 _Asegurece que tenga instalado en su equipo npm para ello ejecute en la terminal el siguiente comando_
