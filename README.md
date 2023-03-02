@@ -7,7 +7,7 @@ Se conforma grupo para la creación del proyecto final, el team llevará por nom
 
 En conjunto establecemos identidad del grupo como el nombre del team, logo del equipo, colores, fuentes delegados y horarios de trabajo. 
 
-![logo](./src/img/logo.png)
+![logo](./src/img/logo.gif)
 
  Este es el proyecto final del Boocampt de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos de programación y a la cual se le puede ejecutar los procesos de: **crear,leer,actulizar y eliminar** su contenido.  
 
