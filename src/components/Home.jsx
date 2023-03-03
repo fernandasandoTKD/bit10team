@@ -123,17 +123,17 @@ export const Home = () => {
             className="mx-4 my-2"
             variant="light"
             size="lg"
-            style={{ fontFamily: "Philosopher", fontWeight: "bold" }}>
+            style={{ fontFamily: "Philosopher" }}
+          >
             Conoce más
           </Button>
         </div>
         <img
           src={Image}
           alt="programming"
-          style={{ width: "35%", height: "auto"  }}
+          style={{ width: "35%", height: "auto" }}
         />
       </div>
-      <br />
       <div className="d-flex justify-content-center mb-4">
         <Form.Control
           type="text"
