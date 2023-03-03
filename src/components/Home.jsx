@@ -7,7 +7,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Image from '../img/b1.jpg';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen, faTrashCan} from '@fortawesome/free-solid-svg-icons';
+  
 export const Home = () => {
   const [contests, setContests] = useState(null);
   const [data, setData] = useState(null);
@@ -85,12 +87,14 @@ export const Home = () => {
               </a>
             </ListGroup.Item>
           </ListGroup>
-          <Button className="m-2" variant="primary">
-            Editar
-          </Button>
-          <Button className="m-2" variant="primary">
-            Eliminar
-          </Button>
+         <div className="icons">
+         <span className="spanicon1">
+          <FontAwesomeIcon icon={faPen}/>
+          </span>
+         <span className="spanicon2">
+         <FontAwesomeIcon icon={faTrashCan}/>
+         </span>
+         </div>
         </Card>
       );
     });
