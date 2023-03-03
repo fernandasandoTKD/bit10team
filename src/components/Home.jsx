@@ -6,10 +6,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import Image from '../img/b1.jpg';
+import Image from "../img/b1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPen, faTrashCan} from '@fortawesome/free-solid-svg-icons';
-  
+import { faPen, faTrashCan, faSearch } from "@fortawesome/free-solid-svg-icons";
+import "../App.css";
+
 export const Home = () => {
   const [contests, setContests] = useState(null);
   const [data, setData] = useState(null);
@@ -53,7 +54,7 @@ export const Home = () => {
             width: "18rem",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             fontFamily: "philosopher",
-            
+            margin: "8px"
           }}
         >
           <Card.Title className="h2 text-center">{contest.name}</Card.Title>
@@ -88,19 +89,29 @@ export const Home = () => {
               </a>
             </ListGroup.Item>
           </ListGroup>
-         <div style={{margin: '20px'}}>
-         <span style={{margin: '20px'}}>
-         <Button variant="success"><FontAwesomeIcon icon={faPen} className="span-btn1"/> </Button>{' '}
-          </span>
-         <span style={{margin: '20px'}}>
-         <Button variant="danger"><FontAwesomeIcon icon={faTrashCan} className="span-btn2"/> </Button>{' '}
-         </span>
-         </div>
+          <div style={{ margin: "20px" }}>
+            <span style={{ margin: "20px" }}>
+              <Button variant="success">
+                <FontAwesomeIcon icon={faPen} className="span-btn1" />{" "}
+              </Button>{" "}
+            </span>
+            <span style={{ margin: "20px" }}>
+              <Button variant="danger">
+                <FontAwesomeIcon icon={faTrashCan} className="span-btn2" />{" "}
+              </Button>{" "}
+            </span>
+          </div>
         </Card>
       );
     });
 
     setData(array);
+  };
+
+  
+  const handleConoceMasClick = () => {
+    const searchElement = document.getElementById("search");
+    searchElement.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleSearch = (event) => {
@@ -114,39 +125,57 @@ export const Home = () => {
         style={{ marginTop: "6rem" }}
       >
         <div style={{ textAlign: "left" }}>
-          <h1 style={{ fontFamily: "Tilt neon", color: "white" }}>
+          <h1
+            style={{
+              paddingLeft: "30px",
+              marginTop: "-80px",
+              fontFamily: "Tilt neon",
+              color: "black",
+              fontWeight: "bold"
+            }}
+          >
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
           </h1>
-          <h2
+          <h4
             className="text-center py-4"
-            style={{ fontFamily: "Tilt neon", color: "white" }}
+            style={{ fontFamily: "Tilt neon", color: "black" }}
           >
             Pon a prueba tus conocimientos y participa en los mejores concursos
             y hackathones de programación...
-          </h2>
+          </h4>
           <Button
             className="mx-4 my-2"
             variant="light"
             size="lg"
-            style={{ fontFamily: "Philosopher", fontWeight: "bold" }}>
+            style={{ fontFamily: "Philosopher", fontWeight: "bold" }}
+            onClick={handleConoceMasClick}
+          >
             Conoce más
           </Button>
         </div>
         <img
           src={Image}
           alt="programming"
-          style={{ width: "35%", height: "auto"  }}
+          className="animated-image"
+          style={{ width: "35%", height: "auto" }}
         />
       </div>
-      <br />
+      <div id="search"></div>
+      <hr />
       <div className="d-flex justify-content-center mb-4">
-        <Form.Control
-          type="text"
-          placeholder="Buscar por nombre"
-          onChange={handleSearch}
-          value={searchTerm}
-          style={{ width: "400px", marginRight: "10px" }}
-        />
+        <Form style={{ display: "flex", alignItems: "center" }}>
+          <Form.Control
+            type="text"
+            placeholder="Buscar por nombre"
+            onChange={handleSearch}
+            value={searchTerm}
+            style={{ width: "400px", marginRight: "10px", marginTop: "100px" , fontFamily: "Tilt neon"}}
+          />
+          <FontAwesomeIcon
+            icon={faSearch}
+            style={{ height: "25px", marginRight:  "10px", marginTop: "100px", color: "gray" }}
+          />
+        </Form>
       </div>
       <Container>
         <Row>

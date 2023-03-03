@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar } from 'react-bootstrap';
 import './css/footer.css'
 import facebook from "../img/facebook.png";
 import youtube from "../img/youtube.png";
