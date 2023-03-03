@@ -107,6 +107,8 @@ export const Home = () => {
 
     setData(array);
   };
+
+  
   const handleConoceMasClick = () => {
     const searchElement = document.getElementById("search");
     searchElement.scrollIntoView({ behavior: "smooth" });
@@ -128,14 +130,15 @@ export const Home = () => {
               paddingLeft: "30px",
               marginTop: "-80px",
               fontFamily: "Tilt neon",
-              color: "white",
+              color: "black",
+              fontWeight: "bold"
             }}
           >
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
           </h1>
           <h4
             className="text-center py-4"
-            style={{ fontFamily: "Tilt neon", color: "white" }}
+            style={{ fontFamily: "Tilt neon", color: "black" }}
           >
             Pon a prueba tus conocimientos y participa en los mejores concursos
             y hackathones de programación...
@@ -161,7 +164,6 @@ export const Home = () => {
       <hr />
       <div className="d-flex justify-content-center mb-4">
         <Form style={{ display: "flex", alignItems: "center" }}>
-          
           <Form.Control
             type="text"
             placeholder="Buscar por nombre"
