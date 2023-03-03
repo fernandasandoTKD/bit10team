@@ -53,6 +53,7 @@ export const Home = () => {
             width: "18rem",
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             fontFamily: "philosopher",
+            
           }}
         >
           <Card.Title className="h2 text-center">{contest.name}</Card.Title>
@@ -87,12 +88,12 @@ export const Home = () => {
               </a>
             </ListGroup.Item>
           </ListGroup>
-         <div className="icons">
-         <span className="spanicon1">
-          <FontAwesomeIcon icon={faPen}/>
+         <div style={{margin: '20px'}}>
+         <span style={{margin: '20px'}}>
+         <Button variant="success"><FontAwesomeIcon icon={faPen} className="span-btn1"/> </Button>{' '}
           </span>
-         <span className="spanicon2">
-         <FontAwesomeIcon icon={faTrashCan}/>
+         <span style={{margin: '20px'}}>
+         <Button variant="danger"><FontAwesomeIcon icon={faTrashCan} className="span-btn2"/> </Button>{' '}
          </span>
          </div>
         </Card>

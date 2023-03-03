@@ -47,26 +47,13 @@
   }
   /*Estilos para los iconos*/
 
-  .icons{
-    font-size: 35px;
-  }
-  .icons .spanicon1{
-    margin: 0 15px 0 15px;
+  .icons .span-btn1{
+    font-size: 25px;
     cursor: pointer;
-    color: #16FF00;
   }
-  .icons .spanicon2{
-    margin: 0 15px 0 15px;
+  .icons .span-btn2{
+ font-size: 25px;
     cursor: pointer;
-    color:#CD0404;
   }
-  .icons .spanicon1:hover{
-    box-shadow: 0 0 15px 0  chartreuse;
-    opacity: 1;
-
-  }
-  .icons .spanicon2:hover{
-    box-shadow: 0 0 10px 0  rgb(250, 32, 17);
-    opacity: 1;
-
-  }
+  
+  
