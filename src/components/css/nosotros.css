@@ -19,7 +19,7 @@
     margin-right: 6rem; 
   }
   .text-container h1, .text-container h3 {
-    text-shadow: 0 0 6px rgba(255, 217, 2, 0.63);
+    text-shadow: 0 0 6px rgb(247, 196, 55);
     color: #000000;
   }
   
