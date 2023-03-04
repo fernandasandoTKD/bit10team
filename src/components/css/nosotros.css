@@ -1,5 +1,7 @@
 .nosotros-container {
     margin-top: 6rem;
+    font-family: "philosopher";
+    font-weight: bold;
     color: rgb(0, 0, 0);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -8,17 +10,19 @@
     justify-content: center; 
     flex-wrap: wrap;  
     margin-bottom: -0.5rem;
+    
   }
   
   .text-container {
-    font-family: "philosopher";
-    font-weight: bold;
     margin-top: 3rem;
     margin-left: 6rem;
-    margin-right: 6rem;
-    font-size: 1.2rem;
+    margin-right: 6rem; 
   }
-
+  .text-container h1, .text-container h3 {
+    text-shadow: 0 0 6px rgba(255, 217, 2, 0.63);
+    color: #000000;
+  }
+  
   .logos-container {
     display: flex;
     justify-content: center;
