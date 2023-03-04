@@ -21,4 +21,23 @@
   color: #888;
 }
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+@media (min-width:760px){
+  .container{
+    width: 740px;
+  }
+}
+
+@media (min-width:990px){
+  .container{
+    width: 970px;
+  }
+}
+
 

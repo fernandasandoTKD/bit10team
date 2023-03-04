@@ -164,6 +164,7 @@ export const Home = () => {
       <hr />
       <div className="d-flex justify-content-center mb-4">
         <Form style={{ display: "flex", alignItems: "center" }}>
+          
           <Form.Control
             type="text"
             placeholder="Buscar por nombre"
@@ -171,17 +172,19 @@ export const Home = () => {
             value={searchTerm}
             style={{ width: "400px", marginRight: "10px", marginTop: "100px" , fontFamily: "Tilt neon"}}
           />
+          
           <FontAwesomeIcon
             icon={faSearch}
             style={{ height: "25px", marginRight:  "10px", marginTop: "100px", color: "gray" }}
           />
         </Form>
+        
       </div>
-      <Container>
+      <Container >
         <Row>
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={4}>
+              <Col key={index} sm={6} md={6} lg={4} >
                 {card}
               </Col>
             ))}
