@@ -1,23 +1,28 @@
 .nosotros-container {
     margin-top: 6rem;
-    font-family: "Tilt neon";
+    font-family: "philosopher";
     font-weight: bold;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display:flex;
     justify-content: center; 
     flex-wrap: wrap;  
+    margin-bottom: -0.5rem;
     
   }
   
   .text-container {
     margin-top: 3rem;
     margin-left: 6rem;
-    margin-right: 6rem;
+    margin-right: 6rem; 
   }
-
+  .text-container h1, .text-container h3 {
+    text-shadow: 0 0 6px rgb(247, 196, 55);
+    color: #000000;
+  }
+  
   .logos-container {
     display: flex;
     justify-content: center;

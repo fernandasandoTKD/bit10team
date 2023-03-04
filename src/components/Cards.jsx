@@ -15,13 +15,13 @@ const Cards = () => {
       },
       {
         id: 2,
-        role: "Profesional desempeñada en el área educativa con experiencia en la enseñanza de lenguajes de programación en las ramas de Frontend y Backend, procesos de ejecución de ciclos y reportes deincidencia, desde la planificación y diseño de interfaz de usuario.",
+        role: "Profesional desempeñada en el área educativa con experiencia en la enseñanza de lenguajes de programación en las ramas de Frontend y Backend, procesos de ejecución de ciclos y reportes de incidencia, desde la planificación y diseño de interfaz de usuario.",
         img: lu ,
         url: "https://fernandasandotkd.github.io/bit07me/"
       },
       {
         id: 3,
-        role: "Aprendiz desarrollo web Front-End Jr con conocimientos en lenguajes de maquetado y demarcado, y programación en JavaScript con uso de framework React, en continuo aprendizaje de forma didáctica, dispuesta siempre a nuevos retos",
+        role: "Aprendiz desarrollo web Front-End Junior con conocimientos en lenguajes de maquetado y de marcado y programación en JavaScript con uso de framework React JS, en continuo aprendizaje de forma didáctica, dispuesta siempre a enfrentar nuevos retos.",
         img: eus,
         url: "https://eusbeidy.github.io/bit07me/",
       },
