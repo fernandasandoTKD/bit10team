@@ -11,10 +11,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faTrashCan, faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
-export const Home = () => {
+
+
+export const Home = (props) => {
   const [contests, setContests] = useState(null);
   const [data, setData] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+
+  
+
+
+
+ 
 
   useEffect(() => {
     getContests();
@@ -117,6 +125,8 @@ export const Home = () => {
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
+  
+  
 
   return (
     <section>
@@ -178,13 +188,12 @@ export const Home = () => {
             style={{ height: "25px", marginRight:  "10px", marginTop: "100px", color: "gray" }}
           />
         </Form>
-        
       </div>
-      <Container >
+      <Container>
         <Row>
           {data &&
             data.map((card, index) => (
-              <Col key={index} sm={6} md={6} lg={4} >
+              <Col key={index} xs={12} md={4}>
                 {card}
               </Col>
             ))}

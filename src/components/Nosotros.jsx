@@ -14,7 +14,7 @@ export const Nosotros = () => {
         <img src={logo1} alt="Logo 1" />
       </div>
       <div className="text-container">
-        <h2>Equipo de trabajo</h2>
+        <h1>Equipo de trabajo</h1>
         <h3>DREAM DEVELOPERS</h3>
       </div>
       <div className="logos-container">

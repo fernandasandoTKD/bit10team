@@ -6,7 +6,9 @@
 .card-body{
   padding: 2rem 0 !important;
   height: 10%;
-
+ 
+  
+ 
 }
 
 .member-card{
@@ -24,6 +26,5 @@
   align-items: center;
   justify-content: center;
   font-size: .8rem;
-  
 }
 
