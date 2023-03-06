@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { Home } from "./Home";
 import { Nosotros } from "./Nosotros";
-import {Inscribir} from './Inscribir';
+import Inscribir from './Inscribir';
 import logo from "../img/logo1.png";
 import './css/navbar.css';
 
