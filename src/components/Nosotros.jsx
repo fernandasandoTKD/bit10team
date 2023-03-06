@@ -20,12 +20,10 @@ export const Nosotros = () => {
       <div className="logos-container">
       <img src={logo2} alt="Logo 2" />
       </div>
-      <Cards></Cards>
+      <Cards className="carta"></Cards>
     </div>
 
-      <div className="container">
-        
-      </div>
+      
 
       </>
     

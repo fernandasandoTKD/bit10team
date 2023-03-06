@@ -1,3 +1,4 @@
+
 .animated-image {
   position: relative;
   animation: slide-in-left 2s forwards;
@@ -28,11 +29,22 @@
 }
 
 
+
+
 @media (min-width:760px){
   .container{
     width: 740px;
   }
+  .card{
+    width: 20%;
+  }
+
+  #logo {
+    visibility: none;
+  }
 }
+
+
 
 @media (min-width:990px){
   .container{
