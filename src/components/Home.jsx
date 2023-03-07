@@ -6,24 +6,103 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import { show_alerta } from "./ShowAlert";
 import Image from "../img/b1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faTrashCan, faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
+import axios from 'axios';
 
 
-
-export const Home = (props) => {
+export const Home = () => {
   const [contests, setContests] = useState(null);
   const [data, setData] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
+const [show, setShow] = useState(false);
+const [name,setName]= useState('');
+const [title,setTitle]= useState('');
+const [duration,setDuration]= useState('');
+const [date,setDate]= useState('');
+const [site,setSite]= useState('');
+const [operation,setOperation]= useState(1);
+
+
+
+
+/* Function de abrir modal para determinar operación a realizar. */
+
+const openModal=(op, name, date, duration, site)=>{
+  setName(' ');
+  setDate(' ');
+  setDuration(' ');
+  setSite(' ');
+  setOperation(1);
+  if(op === 1){
+    setTitle('Registrar concurso');
+}
+else if(op === 2){
+    setTitle('Editar Producto');
+    setName(name);
+    setDate(date);
+    setDuration(duration);
+    setSite(site);
+}
+window.setTimeout(function(){
+    document.getElementById('nombre').focus();
+},500);
+}
+
+const validar = () => {
+  var parametros;
+  var metodo;
+  if(name.trim() === ''){
+      show_alerta('Escribe el nombre del concurso','warning');
+  }
+  else if(date .trim() === ''){
+      show_alerta('Selcciona la fecha del curso','warning');
+  }
+  else if(duration === ''){
+      show_alerta('Escribe el precio del producto','warning');
+  }
+  else if(site === ''){
+    show_alerta('Escribe el precio del producto','warning');
+}
+  else{
+      if(operation === 1){
+          parametros= {name:name.trim(),date: date.trim(),duration:duration,site:site};
+          metodo= 'POST';
+      }
+      else{
+          parametros={name:name.trim(),date: date.trim(),duration:duration, site:site};
+          metodo= 'PUT';
+      }
+      envarSolicitud(metodo,parametros);
+  }
+}
+const envarSolicitud = async(metodo,parametros) => {
+  await axios({ method:metodo, url: setContests, data:parametros}).then(function(respuesta){
+      var tipo = respuesta.data[0];
+      var msj = respuesta.data[1];
+      show_alerta(msj,tipo);
+      if(tipo === 'success'){
+          document.getElementById('btnCerrar').click();
+          getContests();
+      }
+  })
+  .catch(function(error){
+      show_alerta('Error en la solicitud','error');
+      console.log(error);
+  });
+}
+
+
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+}
   
-
-
-
- 
-
   useEffect(() => {
     getContests();
   }, []);
@@ -99,7 +178,7 @@ export const Home = (props) => {
           </ListGroup>
           <div style={{ margin: "20px" }}>
             <span style={{ margin: "20px" }}>
-              <Button variant="success">
+              <Button variant="success" onClick={()=>openModal(2,contest.name, contest.start_time, contest.duration, contest.url)} data-bs-toggle='modal' data-bs-target='modalForm'> 
                 <FontAwesomeIcon icon={faPen} className="span-btn1" />{" "}
               </Button>{" "}
             </span>
@@ -125,6 +204,8 @@ export const Home = (props) => {
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
+  
+
   
   
 
@@ -171,39 +252,103 @@ export const Home = (props) => {
         />
       </div>
       <div id="search"></div>
-      <hr />
+      <hr className="light"/>
       <div className="d-flex justify-content-center mb-4">
         <Form style={{ display: "flex", alignItems: "center" }}>
+          
           <Form.Control
             type="text"
             placeholder="Buscar por nombre"
             onChange={handleSearch}
             value={searchTerm}
-            style={{ width: "400px", marginRight: "10px", marginTop: "100px" , fontFamily: "Tilt neon"}}
+            style={{ width: "400px", marginRight: "10px", marginTop: "50px" , fontFamily: "Tilt neon"}}
           />
+          
           <FontAwesomeIcon
             icon={faSearch}
-            style={{ height: "25px", marginRight:  "10px", marginTop: "100px", color: "gray" }}
+            style={{ height: "25px", marginRight:  "10px", marginTop: "50px", color: "gray" }}
           />
         </Form>
+
+
+            {/* Modal en botón añadir */}
+         <button onClick={()=> openModal(1)} className='btn btn-dark' data-bs-toggle='modal' data-bs-target='#modalForm'>
+          <i className='fa-solid fa-circle-plus'></i> Añadir
+          </button>
+
+            {/* Anexo de modalForm */}
+            <div id='modalForm' className='modal fade' aria-hidden='true'>
+            <div className='modal-dialog'>
+                <div className='modal-content'>
+                    <div className='modal-header'>
+                        <label className='h5'>{title}</label>
+                        <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                    </div>
+                    <div className='modal-body'>
+                        <input type='hidden' id='id'></input>
+                        <div className='input-group mb-3'>
+                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
+                            <input type='text' id='nombre' className='form-control' placeholder='Nombre' value={name}
+                            onChange={(e)=> setName(e.target.value)}></input>
+                        </div>
+                        
+                    </div>
+
+                    <div className='modal-body'>
+                        <input type='hidden' id='id'></input>
+                        <div className='input-group mb-3'>
+                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
+                            <input type='date' id='fecha' className='form-control' placeholder='Fecha' value={date}
+                            onChange={(e)=> setDate(e.target.value)}></input>
+                        </div>
+                        
+                    </div>
+
+                    <div className='modal-body'>
+                        <input type='hidden' id='id'></input>
+                        <div className='input-group mb-3'>
+                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
+                            <input type='text' id='duration' className='form-control' placeholder='Duración' value={duration}
+                            onChange={(e)=> setDuration(e.target.value)}></input>
+                        </div>
+                    </div>
+
+                    <div className='modal-body'>
+                        <input type='hidden' id='id'></input>
+                        <div className='input-group mb-3'>
+                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
+                            <input type='text' id='site' className='form-control' placeholder='sitio Web' value={site}
+                            onChange={(e)=> setSite(e.target.value)}></input>
+                        </div>
+                        
+                    </div>
+
+                    <div className='d-grid col-6 mx-auto'>
+                            <button onClick={() => validar()} className='btn btn-success'>
+                                <i className='fa-solid fa-floppy-disk'></i> Guardar
+                            </button>
+                        </div>
+                    <div className='modal-footer'>
+                        <button type='button' id='btnCerrar' className='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+      </div>
+      <hr />
+      <Container >
+        <Row >
+          {data &&
+            data.map((card, index) => (
+              <Col key={index} xs={12} md={6} sm={6} lg={4} 
+              className>
+                {card}
+              </Col>
+            ))}
+        </Row>
         
-        { /*aca fue donde trate de pasarla por props*/}
-
-        <Button variant="primary" onClick={props.handleShow}>
-       Agregar nuevo concurso
-      </Button>
-        <Container>
-    <Row>
-      {data &&
-        data.map((card, index) => (
-          <Col key={index} xs={12} md={4}>
-            {card}
-          </Col>
-        ))}
-    </Row>
-  </Container>
-
+      </Container>
     </section>
   );
 };

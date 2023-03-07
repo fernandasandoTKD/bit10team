@@ -1,3 +1,4 @@
+
 .animated-image {
   position: relative;
   animation: slide-in-left 2s forwards;
@@ -19,6 +20,36 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+
+
+@media (min-width:760px){
+  .container{
+    width: 740px;
+  }
+  .card{
+    width: 20%;
+  }
+
+  #logo {
+    visibility: none;
+  }
+}
+
+
+
+@media (min-width:990px){
+  .container{
+    width: 970px;
+  }
 }
 
 
