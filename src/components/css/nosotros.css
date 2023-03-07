@@ -10,6 +10,7 @@
     justify-content: center; 
     flex-wrap: wrap;  
     margin-bottom: -0.5rem;
+   
     
   }
   
@@ -34,4 +35,58 @@
     height: 120px;
     border-radius: 50%;
   }
+  @media (max-width: 786px){
+    .nosotros-container {
+      margin-top: 2rem;
+      font-family: "philosopher";
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 300vh;
+      display:flex;
+      justify-content: center; 
+      flex-wrap: wrap;  
+     
+     
+    }
+
+    .text-container {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem; 
+      padding-top: 1rem;
+    
+      }
+      
+     
+    }
+  
+
+    @media (max-width: 990px){
+      .nosotros-container {
+        margin-top: 2rem;
+        font-family: "philosopher";
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 300vh;
+        display:flex;
+        justify-content: center; 
+        flex-wrap: wrap;  
+       
+       
+      }
+  
+      .text-container {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        padding-top: 1rem;
+      
+        }
+        
+       
+      }
   
