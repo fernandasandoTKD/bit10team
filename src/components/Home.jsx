@@ -46,6 +46,7 @@ export const Home = () => {
       )
         .toString()
         .slice(0, 2);
+        
 
       return (
         <Card
