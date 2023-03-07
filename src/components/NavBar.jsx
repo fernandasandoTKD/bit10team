@@ -3,7 +3,6 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { Home } from "./Home";
 import { Nosotros } from "./Nosotros";
-import Inscribir from './Inscribir';
 import logo from "../img/logo1.png";
 import './css/navbar.css';
 
@@ -23,7 +22,7 @@ export const NavBar = () => {
             <Link to="/">
             </Link>
             <Link className="nav-link" to="/Nosotros">Nosotros</Link>
-            <Link className="nav-link" to="/Inscribir">Inscibirse</Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -31,7 +30,7 @@ export const NavBar = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Nosotros" element={<Nosotros />} />
-        <Route path="/Inscribir" element={<Inscribir />} />
+        
       </Routes>
     </BrowserRouter>
   );
