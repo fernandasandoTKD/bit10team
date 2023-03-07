@@ -25,6 +25,12 @@ const Cards = () => {
         img: eus,
         url: "https://eusbeidy.github.io/bit07me/",
       },
+      {
+        id: 4,
+        role: "aqui va la descripcionmmmmmmbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbggggggggggggggggggggggggggggggggggggggggggggggg",
+        img: eus,
+        url: "https://kiketach.github.io/bit07me/",
+      },
     ]);
   
     return (
