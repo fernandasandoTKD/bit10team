@@ -177,18 +177,6 @@ const handleSubmit = async (e) => {
               </a>
             </ListGroup.Item>
           </ListGroup>
-          <div style={{ margin: "20px" }}>
-            <span style={{ margin: "20px" }}>
-              <Button variant="success" onClick={()=>openModal(2,contest.name, contest.start_time, contest.duration, contest.url)} data-bs-toggle='modal' data-bs-target='modalForm'> 
-                <FontAwesomeIcon icon={faPen} className="span-btn1" />{" "}
-              </Button>{" "}
-            </span>
-            <span style={{ margin: "20px" }}>
-              <Button variant="danger">
-                <FontAwesomeIcon icon={faTrashCan} className="span-btn2" />{" "}
-              </Button>{" "}
-            </span>
-          </div>
         </Card>
       );
     });
@@ -209,11 +197,11 @@ const handleSubmit = async (e) => {
 
   
   
-
+/* Sección de imagen con animación */
   return (
     <section>
       <div
-        className="d-flex justify-content-between align-items-center"
+        className="d-flex justify-content-between align-items-center text-alig"
         style={{ marginTop: "6rem" }}
       >
         <div style={{ textAlign: "left" }}>
@@ -236,10 +224,12 @@ const handleSubmit = async (e) => {
             y hackathones de programación...
           </h4>
           <Button
-            className="mx-4 my-2"
+            
             variant="light"
             size="lg"
-            style={{ fontFamily: "Philosopher", fontWeight: "bold" }}
+            style={{ fontFamily: "Philosopher", fontWeight: "bold" ,
+            
+          }}
             onClick={handleConoceMasClick}
           >
             Conoce más
@@ -252,6 +242,9 @@ const handleSubmit = async (e) => {
           style={{ width: "35%", height: "auto" }}
         />
       </div>
+
+
+      {/* Sección de buscador */}
       <div id="search"></div>
       <hr className="light"/>
       <div className="d-flex justify-content-center mb-4">
@@ -270,76 +263,12 @@ const handleSubmit = async (e) => {
             style={{ height: "25px", marginRight:  "10px", marginTop: "50px", color: "gray" }}
           />
         </Form>
+</div>
 
 
-            {/* Modal en botón añadir */}
-         <button onClick={()=> openModal(1)} className='btn btn-dark' data-bs-toggle='modal' data-bs-target='#modalForm'>
-          <i className='fa-solid fa-circle-plus'></i> Añadir
-          </button>
-
-            {/* Anexo de modalForm */}
-            <div id='modalForm' className='modal fade' aria-hidden='true'>
-            <div className='modal-dialog'>
-                <div className='modal-content'>
-                    <div className='modal-header'>
-                        <label className='h5'>{title}</label>
-                        <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
-                    </div>
-                    <div className='modal-body'>
-                        <input type='hidden' id='id'></input>
-                        <div className='input-group mb-3'>
-                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
-                            <input type='text' id='nombre' className='form-control' placeholder='Nombre' value={name}
-                            onChange={(e)=> setName(e.target.value)}></input>
-                        </div>
-                        
-                    </div>
-
-                    <div className='modal-body'>
-                        <input type='hidden' id='id'></input>
-                        <div className='input-group mb-3'>
-                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
-                            <input type='date' id='fecha' className='form-control' placeholder='Fecha' value={date}
-                            onChange={(e)=> setDate(e.target.value)}></input>
-                        </div>
-                        
-                    </div>
-
-                    <div className='modal-body'>
-                        <input type='hidden' id='id'></input>
-                        <div className='input-group mb-3'>
-                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
-                            <input type='text' id='duration' className='form-control' placeholder='Duración' value={duration}
-                            onChange={(e)=> setDuration(e.target.value)}></input>
-                        </div>
-                    </div>
-
-                    <div className='modal-body'>
-                        <input type='hidden' id='id'></input>
-                        <div className='input-group mb-3'>
-                            <span className='input-group-text'><i className='fa-solid fa-gift'></i></span>
-                            <input type='text' id='site' className='form-control' placeholder='sitio Web' value={site}
-                            onChange={(e)=> setSite(e.target.value)}></input>
-                        </div>
-                        
-                    </div>
-
-                    <div className='d-grid col-6 mx-auto'>
-                            <button onClick={() => validar()} className='btn btn-success'>
-                                <i className='fa-solid fa-floppy-disk'></i> Guardar
-                            </button>
-                        </div>
-                    <div className='modal-footer'>
-                        <button type='button' id='btnCerrar' className='btn btn-secondary' data-bs-dismiss='modal'>Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-      </div>
-      <hr />
-      <Container >
-        <Row >
+{/* Sección de contenedor de cartas */}
+      <Container className="pb-2" >
+        <Row  >
           {data &&
             data.map((card, index) => (
               <Col key={index} xs={12} md={6} sm={6} lg={4} 
