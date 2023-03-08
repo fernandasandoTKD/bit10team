@@ -1,8 +1,6 @@
 
 # Bit10team
 
-***
-
 ##  Descripción :page_with_curl:
 
  Este es el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación, con parametros de filtrado de busqueda y operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actulizar y Eliminar** su contenido.  
@@ -15,7 +13,6 @@
 5. [Tecnologías](#tecnologías)
 6. [Team](#team)
 
-***
 
 <a name="delegados"></a>
 ##   Delegados 
@@ -101,6 +98,7 @@ _de lo contario dirijase al siguiente_  [link](https://co.video.search.yahoo.com
     - Visual StudioCode
     - Meet
     
+***
 
 <a name="team"></a>
 ### Team 
