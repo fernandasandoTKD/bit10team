@@ -3,7 +3,7 @@
 
 ##  Descripción :page_with_curl:
 
- Este es el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación, con parametros de filtrado de busqueda y operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actulizar y Eliminar** su contenido.  
+ Este es el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación, con parametros de filtrado de busqueda y operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actualizar y Eliminar** su contenido.  
 
 ## Tabla de contenido
 1. [Delegados](#delegados)
