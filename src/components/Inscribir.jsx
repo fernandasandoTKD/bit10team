@@ -51,7 +51,7 @@ export default function Inscribir() {
     
 
       <div className="data">
-      <h2>Inscribirse</h2>
+      <h2 >Inscribirse</h2>
       <h2 className="text-center">
         Parcipantes registrados para proximo Hackathon!
       </h2>
@@ -105,7 +105,7 @@ export default function Inscribir() {
             <tbody className="bg-warning-subtle">
               {data.map((item, index) => (
                 <tr key={index}>
-                  <td>{index}</td>
+                  <td>{index + 1}</td>
                   <td>{item.name}</td>
                   <td>{item.age}</td>
                   <td>{item.email}</td>

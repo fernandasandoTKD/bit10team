@@ -10,8 +10,6 @@
     justify-content: center; 
     flex-wrap: wrap;  
     margin-bottom: -0.5rem;
-   
-    
   }
   
   .text-container {
@@ -20,8 +18,8 @@
     margin-right: 6rem; 
   }
   .text-container h1, .text-container h3 {
-    text-shadow: 0 0 6px rgb(247, 196, 55);
-    color: #000000;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    color: rgba(255, 222, 89, 0.788);
   }
   
   .logos-container {
@@ -69,7 +67,6 @@
       }
      
     }
-  
 
      /* Tamaño tablet (768-480) */
   @media all and (min-width: 480px) and (max-width: 768px) {

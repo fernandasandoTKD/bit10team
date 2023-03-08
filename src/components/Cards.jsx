@@ -6,7 +6,7 @@ import eus from '../img/2.png';
 import lu from '../img/3.png';
 import en from '../img/4.png';
 const Cards = () => {
-    const [persons, setPersons] = useState([
+    const [persons] = useState([
       {
         id: 1,
         name: "Mariangel Socorro",
@@ -26,7 +26,7 @@ const Cards = () => {
       {
         id: 3,
         name: "Eusbedy Peréz",
-        taks:"Construcción Wriframe de alta",
+        taks:"Wireframe de alta",
         role: "Aprendiz desarrollo web Front-End Junior con conocimientos en lenguajes de maquetado y de marcado y programación en JavaScript con uso de framework React JS, en continuo aprendizaje de forma didáctica, dispuesta siempre a enfrentar nuevos retos.",
         img: eus,
         url: "https://eusbeidy.github.io/bit07me/",
@@ -47,7 +47,7 @@ const Cards = () => {
         
         {persons.map((person) => {
           return (
-            <CardAbout
+            <CardAbout 
               key={person.id}
               name={person.name}
               taks={person.taks}
@@ -63,4 +63,4 @@ const Cards = () => {
     );
   };
   
-export default Cards
+export default Cards;
