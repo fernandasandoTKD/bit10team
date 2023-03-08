@@ -25,7 +25,7 @@ const Cards = () => {
       },
       {
         id: 3,
-        name: "Eusbedy Peréz",
+        name: "Eusbeidy Pérez",
         taks:"Wireframe de alta",
         role: "Aprendiz desarrollo web Front-End Junior con conocimientos en lenguajes de maquetado y de marcado y programación en JavaScript con uso de framework React JS, en continuo aprendizaje de forma didáctica, dispuesta siempre a enfrentar nuevos retos.",
         img: eus,
@@ -33,7 +33,7 @@ const Cards = () => {
       },
       {
         id: 4,
-        name: "Erike Abril",
+        name: "Enrique Abril",
         taks: "Desarrollo CRUD",
         role: "Ecommercer / Software Developer Me dedico al diseño publicitario, estrategias de marketing digital y atención al cliente especialmente en ventas.",
         img: en,
