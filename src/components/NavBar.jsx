@@ -3,6 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import { Home } from "./Home";
 import { Nosotros } from "./Nosotros";
+import Inscribir from './Inscribir';
 import logo from "../img/logo1.png";
 import './css/navbar.css';
 
@@ -10,7 +11,7 @@ import './css/navbar.css';
 export const NavBar = () => {
   return (
     <BrowserRouter>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" >
+      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className='container-fluid' >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" >
         <Navbar.Brand className='img'>
@@ -21,7 +22,9 @@ export const NavBar = () => {
             <Link className="nav-link" to="/">Home</Link>
             <Link to="/">
             </Link>
+            <Link className="nav-link" to="/Inscribir">Inscribirse</Link>
             <Link className="nav-link" to="/Nosotros">Nosotros</Link>
+            
             
           </Nav>
         </Navbar.Collapse>
@@ -29,7 +32,9 @@ export const NavBar = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Inscribir" element={<Inscribir />} />
         <Route path="/Nosotros" element={<Nosotros />} />
+        
         
       </Routes>
     </BrowserRouter>

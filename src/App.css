@@ -3,6 +3,8 @@
   position: relative;
   animation: slide-in-left 2s forwards;
   transform: translateX(100%);
+  flex-wrap: wrap;  
+  margin-bottom: -0.8rem;
 }
 
 @keyframes slide-in-left {
@@ -15,7 +17,15 @@
 }
 
 .card {
-  padding: 2em;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
+  width: 100%;
+  text-align: center;
+  background-color:  rgba(255,222,89, 0.5) ;
 }
 
 .read-the-docs {
@@ -28,6 +38,9 @@
   gap: 14px;
 }
 
+.d-flex button {
+margin-left: 25rem;
+}
 
 
 

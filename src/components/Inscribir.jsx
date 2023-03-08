@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import './css/table.css';
+import edit from '../img/lapiz.png';
+import del from '../img/delete.png';
+import plus from '../img/add.png';
+import up from '../img/loop.png';
+
+
 
 export default function Inscribir() {
   /*INICIANDO Y DECLARANDO EL USESTATE */
@@ -41,13 +48,14 @@ export default function Inscribir() {
 
   return (
     <>
-      <h2>Inscribir</h2>
-      <h2>Inscribir</h2>
-      <h2>Inscribir</h2>
-      <h2 className="text-center text-black">
+    
+
+      <div className="data">
+      <h2>Inscribirse</h2>
+      <h2 className="text-center">
         Parcipantes registrados para proximo Hackathon!
       </h2>
-      <h6 className="text-center text-black fst-italic">
+      <h6 className="text-center  fst-italic">
         (No pierdas esta oportunidad e inscribete al proximo evento!)
       </h6>{" "}
       <br />
@@ -78,7 +86,7 @@ export default function Inscribir() {
             onChange={handleInputChange}
           />
           <button className="ms-4 btn btn-outline-success" type="submit">
-            {editIndex !== null ? "Actualizar" : "Añadir"}
+            {editIndex !== null ? <img src={up}/> : <img src={plus}/>} 
           </button>
         </form>
         <br />
@@ -94,7 +102,7 @@ export default function Inscribir() {
               </tr>
             </thead>
             {/* PROGRAMAMOS LA LOGICA DE LA TABLA */}
-            <tbody>
+            <tbody className="bg-warning-subtle">
               {data.map((item, index) => (
                 <tr key={index}>
                   <td>{index}</td>
@@ -106,13 +114,13 @@ export default function Inscribir() {
                       className="ms-4 btn btn-outline-secondary"
                       onClick={() => handleDelete(index)}
                     >
-                      Borrar
+                      <img src={del} alt="" />
                     </button>
                     <button
                       className="ms-4 btn btn-outline-secondary"
                       onClick={() => handleEdit(index)}
                     >
-                      Corregir
+                     <img src={edit} alt="" />
                     </button>
                   </td>
                 </tr>
@@ -121,6 +129,9 @@ export default function Inscribir() {
           </table>
         </div>
       </div>
+      </div>
+     
+      
     </>
   );
 }

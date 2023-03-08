@@ -2,28 +2,31 @@ import React from 'react'
 import './css/card.css';
 
 
+
+
 const CardAbout = (props) => {
   return (
-    <div className="col-lg-4">
-      <div className="text-center ">
-        <div className="member-card pt-2 pb-2">
-          <div className="thumb-lg member-thumb mx-auto ">
-            <img
+
+  <div className="col-md-6 col-sm-6 col-lg-3 col-xs-12 ">
+         <div class="box">
+          < div class="box-top">
+             <img
               src={props.img}
               className="rounded-circle "
               alt="profile-image"
             />
-          </div>
-          <div className="card-body">
-            <p className="text">{props.role}</p>
-            <a href={props.url} target="_blank" rel="noopener noreferrer" className='btn btn-outline-dark .bg-light-subtle rounded-0'>
-                Saber más 
-            </a>
-
-          </div>
-        </div>
+      <div class="title-flex">
+        <h3 className="box-title">{props.name}</h3>
+        <p className="user-follow-info">{props.taks}</p>
       </div>
+      <p class="description">{props.role}</p>
     </div>
+    <a href={props.url} class="button">Saber más</a>
+  </div>
+
+  </div>
+
+  
   );
 };
 

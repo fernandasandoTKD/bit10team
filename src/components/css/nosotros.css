@@ -1,11 +1,11 @@
 .nosotros-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
     font-family: "philosopher";
     font-weight: bold;
     color: rgb(0, 0, 0);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: 200vh;
     display:flex;
     justify-content: center; 
     flex-wrap: wrap;  
@@ -35,7 +35,9 @@
     height: 120px;
     border-radius: 50%;
   }
-  @media (max-width: 786px){
+
+/* Tamaño tablet horizontal (1024-768) */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
     .nosotros-container {
       margin-top: 2rem;
       font-family: "philosopher";
@@ -43,27 +45,70 @@
       color: rgb(0, 0, 0);
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      height: 300vh;
+      height: 150%;
       display:flex;
       justify-content: center; 
       flex-wrap: wrap;  
+      margin-bottom: -0.5rem;
+   
+    }
+    .text-container {
+      margin-top: 5rem;
+      margin-left: 1rem;
+      margin-right: 1rem; 
+      padding-top: 2rem;
+      margin-bottom: 3rem;
+    
+      }
+      
+      .logos-container img {
+        margin-top: 5rem;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
      
-     
+    }
+  
+
+     /* Tamaño tablet (768-480) */
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    .nosotros-container {
+      margin-top: 2rem;
+      font-family: "philosopher";
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 150%;
+      display:flex;
+      justify-content: center; 
+      flex-wrap: wrap;  
+      margin-bottom: -0.5rem;
+   
     }
 
     .text-container {
       margin-top: 2rem;
       margin-left: 1rem;
-      margin-right: 1rem; 
-      padding-top: 1rem;
+      margin-right: .5rem; 
+      padding-top: .5rem;
+      margin-bottom: 2rem;
     
       }
       
+      .logos-container img {
+        margin-top: 2rem;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
      
     }
-  
+   
+  /* Tamaño teléfonos (480-menos ) */
+    @media  (max-width: 480px) {
 
-    @media (max-width: 990px){
       .nosotros-container {
         margin-top: 2rem;
         font-family: "philosopher";
@@ -71,22 +116,103 @@
         color: rgb(0, 0, 0);
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
         background-size: cover;
-        height: 300vh;
+        height: 150%;
         display:flex;
         justify-content: center; 
         flex-wrap: wrap;  
-       
-       
+        margin-bottom: -0.5rem;
+     
       }
   
       .text-container {
         margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1rem; 
-        padding-top: 1rem;
+        padding-top: 2rem;
+        margin-bottom: 3rem;
       
         }
         
+        .logos-container img {
+          margin-top: 2rem;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
        
       }
+    
+     
+   /* Tamaño por defecto pantallas (1280-1024) */
+
+    @media all and (min-width: 1024px) and (max-width: 1280px){
+  .nosotros-container {
+    margin-top: 2rem;
+    font-family: "philosopher";
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 150%;
+    display:flex;
+    justify-content: center; 
+    flex-wrap: wrap;  
+   
+   
+  }
+
+  .text-container {
+    margin-top: 8rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    margin-bottom: 1rem;
   
+    }
+
+    .logos-container img {
+      margin-top: 8rem;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+  
+    
+ }
+  /* Tamaño teléfonos (320-menos ) */
+ @media  (max-width: 320px) {
+  .nosotros-container {
+    margin-top: 3rem;
+    font-family: "philosopher";
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 200%;
+    display:flex;
+    justify-content: center; 
+    flex-wrap: wrap;  
+    margin-bottom: -0.5rem;
+ 
+  }
+
+  .text-container {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    margin-right: .5rem; 
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+  
+    }
+    
+    .logos-container img {
+      margin-top: 2rem;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+   
+  }
+ 
+  
+ 
+      

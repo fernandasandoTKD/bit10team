@@ -1,0 +1,20 @@
+.data{
+    height: 100vh;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;  
+    margin-bottom: -0.5rem;
+    color: #FFDE59;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('src/img/bg2.jpg') no-repeat center center fixed;
+}
+
+
+thead { 
+    color:#FFDE59;
+}
+ h2{
+    color:#F99730;
+    padding-top: 2rem;
+ }
