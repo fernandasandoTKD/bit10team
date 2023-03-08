@@ -34,15 +34,15 @@ PHILOSOPHER, TILT NEON.
 
 - Wireframe de baja: 
 
-<img src="./src/img/w1.jpg" alt="Wireframe de baja 1" width="380"/>
-<img src="./src/img/w2.jpg" alt="Wireframe de baja 2" width="380"/>
+<img src="./src/img/w1.jpg" alt="Wireframe de baja 1" width="460"/>
+<img src="./src/img/w2.jpg" alt="Wireframe de baja 2" width="460"/>
 
 - Wireframe de alta. 
 
-<img src="./src/img/w3.jpg" alt="Wireframe de alta 1" width="380"/>
-<img src="./src/img/w4.jpg" alt="Wireframe de alta 2" width="380"/>
-<img src="./src/img/w5.jpg" alt="Wireframe de alta 3" width="380"/>
-<img src="./src/img/w6.jpg" alt="Wireframe de alta 4" width="380"/>
+<img src="./src/img/w3.jpg" alt="Wireframe de alta 1" width="460"/>
+<img src="./src/img/w4.jpg" alt="Wireframe de alta 2" width="460"/>
+<img src="./src/img/w5.jpg" alt="Wireframe de alta 3" width="460"/>
+<img src="./src/img/w6.jpg" alt="Wireframe de alta 4" width="460"/>
 
 - Logotipo del team:
 
