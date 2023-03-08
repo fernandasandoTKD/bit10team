@@ -1,43 +1,60 @@
 
-# Dreams Developers
+# Bit10team
 
-## Descripción  :bookmark_tabs:
+***
 
- Este es el proyecto final del Boocampt de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos de programación y a la cual se le puede ejecutar los procesos de: **crear,leer,actulizar y eliminar** su contenido.  
+##  Descripción :page_with_curl:
 
+ Este es el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación, con parametros de filtrado de busqueda y operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actulizar y Eliminar** su contenido.  
 
-### Delegados :busts_in_silhouette:
--  :dizzy: ***Luisa Díaz Sandoval***  :dizzy:  Repositorio y despliegue del proyecto 
--  :dizzy: ***Mariangel Socorro*** :dizzy: Documentación  
-- :dizzy: ***Eusbeidy Pérez*** :dizzy:  Wireframe de alta  
+## Tabla de contenido
+1. [Delegados](#delegados)
+2. [Ruta de estilos](#ruta-de-estilos)
+3. [Horarios de trabajo](#horarios-de-trabajo)
+4. [Instalación](#instalación)
+5. [Tecnologías](#tecnologías)
+6. [Team](#team)
 
-### Tareas conjuntas
-- Construcción Wirefame de baja -> Todo el equipo
+***
 
+<a name="delegados"></a>
+##   Delegados 
 
-### Construcción de ruta de estilos. 
-- Fuentes PHILOSOPHER, TILT NEON.  Recurso: Google Fonts
-- Designación de colores: 
-`#F99730`:orange_circle:
-`#000000`:black_circle:
-`#FFDE59`:yellow_circle:
+- **Luisa Díaz Sandoval** -  Repositorio y despliegue del proyecto.
+- **Mariangel Socorro** - Documentación. 
+- **Eusbeidy Pérez** - Wireframe de alta.  
+- **Enrique Abril** - Funcionamiendo del CRUD. 
 
-- Wireframe de baja. 
+<a name="ruta-de-estilos"></a>
+## Ruta de estilos 
+- Fuentes Google Fonts: 
+PHILOSOPHER, TILT NEON. 
 
-![Wireframe de baja](./src/img/w1.jpg "Wireframe de baja") 
-![Wireframe de baja 2](./src/img/w2.jpg "Wireframe de alta")
+- Paleta de colores: 
+`#F99730`🟠
+`#000000`⚫
+`#FFDE59`🟡
 
+- Wireframe de baja: 
+
+<img src="./src/img/w1.jpg" alt="Wireframe de baja 1" width="480"/>
+<img src="./src/img/w2.jpg" alt="Wireframe de baja 2" width="480"/>
 
 - Wireframe de alta. 
 
-![Wireframe de alta](./src/img/w3.jpg) 
-![Wireframe de alta 2](./src/img/w4.jpg)
+<img src="./src/img/w3.jpg" alt="Wireframe de alta 1" width="480"/>
+<img src="./src/img/w4.jpg" alt="Wireframe de alta 2" width="480"/>
+<img src="./src/img/w5.jpg" alt="Wireframe de alta 3" width="480"/>
+<img src="./src/img/w6.jpg" alt="Wireframe de alta 4" width="480"/>
 
+- Logotipo del team:
 
-- Logotipo:
-![logo](./src/img/logo.jpg )
+<img src="./src/img/logo.jpg" alt="logotipo del team" width="200"/>
 
-### Horarios
+<a name="horarios-de-trabajo"></a>
+## Horarios de trabajo
+
+Reuniones virtuales a través de google meet. 
 
 |    Días       |   Horario     |
 | ------------- | ------------- |
@@ -48,7 +65,9 @@
 | viernes       | 6:00 a 10:00pm|
 | Sábado        | 6:30 a 7:30pm |
 
-### Instalación. 
+<a name="instalación"></a>
+## Instalación
+
 _Asegurece que tenga instalado en su equipo npm para ello ejecute en la terminal el siguiente comando_
 ```
 npm -v
@@ -60,27 +79,38 @@ npm run dev
 ```
 _de lo contario dirijase al siguiente_  [link](https://co.video.search.yahoo.com/search/video?fr=mcafee&ei=UTF-8&p=como+intalar+npm&type=E210CO91215G0#id=1&vid=e14ce88f632f4bcd22ceba395d2bb249&action=click)
 
-### Tecnologías a utilizar. 
+<a name="tecnologías"></a>
+## Tecnologías. 
+
 1. Lenguajes de programación.
     - JavaScript
+
 2. Lenguajes de marcado. 
     - HTML
     - CSS
+
 3. Frameworks.
     - React
     - Bootstrap
     - Font Awesome
+
 4. Herramientas complementarias.
     - Trello 
     - Canva
     - Ninja Mock
     - Visual StudioCode
+    - Meet
     
 
+<a name="team"></a>
+### Team 
 
-## Autores 
+ **DREAM DEVELOPERS** :gem:
 
-- [Eusbeidy Pérez](https://www.linkedin.com/in/eusbeidy-perez)
-- [Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
 - [Mariangel Socorro](https://www.linkedin.com/in/mariangelsocorro/)
+- [Luisa Díaz Sandoval](https://www.linkedin.com/in/lufe-diaz-s/)
+- [Eusbeidy Pérez](https://www.linkedin.com/in/eusbeidy-perez)
+- [Enrique Abril](https://github.com/kiketach)
+
+
 
