@@ -12,42 +12,53 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
 export const Home = () => {
-  const [contests, setContests] = useState(null);
-  const [data, setData] = useState(null);
-  const [searchTerm, setSearchTerm] = useState("");
+  // Definimos tres estados iniciales utilizando el hook useState
+  const [contests, setContests] = useState(null); // Estado para almacenar los datos de los concursos obtenidos de la API
+  const [data, setData] = useState(null); // Estado para almacenar los datos procesados de los concursos
+  const [searchTerm, setSearchTerm] = useState(""); // Estado para almacenar el término de búsqueda ingresado por el usuario
 
+  // Definimos un efecto secundario que se ejecuta solo una vez, al montarse el componente
   useEffect(() => {
-    getContests();
+    getContests(); // Llamamos a la función getContests() que obtiene los datos de la API
   }, []);
 
+  // Definimos un efecto secundario que se ejecuta cuando cambia el estado de "contests" o "searchTerm"
   useEffect(() => {
     if (contests) {
-      getData();
+      getData(); // Si "contests" es diferente de nulo, llamamos a la función getData() que procesa los datos
     }
   }, [contests, searchTerm]);
 
+  // Definimos una función asíncrona llamada "getContests" que obtiene los datos de los concursos desde la API
   const getContests = async () => {
     try {
-      const res = await fetch("https://kontests.net/api/v1/all");
-      setContests(await res.json());
+      const res = await fetch("https://kontests.net/api/v1/all"); // Hacemos una petición a la API utilizando fetch
+      setContests(await res.json()); // Si la petición es exitosa, actualizamos el estado "contests" con los datos obtenidos de la API
     } catch (error) {
-      console.log("Upss.. hay un error");
+      console.log("Upss.. hay un error"); // Si ocurre un error, lo mostramos en la consola
     }
   };
 
+  // Definimos una función llamada "getData" que procesa los datos de los concursos obtenidos de la API
   const getData = () => {
+    // Filtramos los datos de los concursos según el término de búsqueda ingresado por el usuario
     const filteredContests = contests.filter((contest) => {
       return contest.name.toLowerCase().includes(searchTerm.toLowerCase());
     });
+    
+    // Tomamos los primeros 6 concursos filtrados y los procesamos para obtener la duración en horas de cada uno
     const array = filteredContests.slice(0, 6).map((contest, index) => {
+      // Calculamos la duración en horas de cada concurso
       const duration = Math.floor(
         (new Date(contest.end_time) - new Date(contest.start_time)) /
           (1000 * 60 * 60)
       )
         .toString()
-        .slice(0, 2);
+        .slice(0, 2); // Tomamos solo los primeros dos caracteres para mostrar la duración en formato "xx horas"
 
       return (
+         // Renderizamos una "Card" para cada objeto "contest" en el array "data"
+        // Utilizamos el método "map" para iterar sobre el array y crear una "Card" para cada objeto
         <Card
           key={index}
           style={{
@@ -56,19 +67,19 @@ export const Home = () => {
             fontFamily: "philosopher",
             margin: "8px",
             height: "280px",
-            boxShadow: "0px 0px 10px rgba(0,0,0,0.3)", // Agregar sombra
+            boxShadow: "0px 0px 10px rgba(0,0,0,0.3)"
           }}
         >
           <Card.Title className="h2 text-center">{contest.name}</Card.Title>
           <ListGroup className="list-group-flush">
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white" }}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
             >
               <li className="h6">Fecha de inicio:</li>
               {contest.start_time.substring(0, 10)}.
             </ListGroup.Item>
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white" }}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
             >
               <li className="h6">Duración:</li>
               {duration} horas.
@@ -97,18 +108,20 @@ export const Home = () => {
     setData(array);
   };
 
+  // Definimos una función llamada "handleConoceMasClick" que se ejecuta cuando el usuario hace click en el botón "Conoce más".
+ // Esta función utiliza la función "scrollIntoView" para hacer scroll hasta el elemento con id "search" de forma suave.
   const handleConoceMasClick = () => {
     const searchElement = document.getElementById("search");
     searchElement.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Definimos una función llamada "handleSearch" que se ejecuta cuando el usuario ingresa un término de búsqueda en la barra de búsqueda.
+  // Esta función utiliza la función "setSearchTerm" para actualizar el estado "searchTerm" con el valor ingresado por el usuario.
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  {
-    /* Sección de imagen con animación */
-  }
+  
   return (
     <section>
       <div
@@ -116,6 +129,7 @@ export const Home = () => {
         style={{ marginTop: "6rem" }}
       >
         <div style={{ textAlign: "left" }}>
+        {/* Encabezado principal */}
           <h1
             style={{
               paddingLeft: "30px",
@@ -127,6 +141,7 @@ export const Home = () => {
           >
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
           </h1>
+          {/* Descripción del sitio */}
           <h4
             className="text-center py-4"
             style={{ fontFamily: "Tilt neon", color: "black" }}
@@ -134,6 +149,7 @@ export const Home = () => {
             Pon a prueba tus conocimientos y participa en los mejores concursos
             y hackathones de programación...
           </h4>
+          {/* Botón "Conoce más" */}
           <Button
             variant="light"
             size="lg"
@@ -148,6 +164,7 @@ export const Home = () => {
             Conoce más
           </Button>
         </div>
+        {/* Imagen animada del home*/}
         <img
           src={Image}
           alt="programming"
@@ -156,11 +173,11 @@ export const Home = () => {
         />
       </div>
 
-      {/* Sección de buscador */}
       <div id="search"></div>
       <hr className="light" />
+     {/* Crea un formulario para buscar por nombre*/}
       <div className="d-flex justify-content-center mb-4">
-        <Form style={{ display: "flex", alignItems: "center" }}>
+        <Form style={{ display: "flex", alignItems: "center" }}> 
           <Form.Control
             type="text"
             placeholder="Buscar por nombre"
