@@ -4,7 +4,8 @@
 }
 
 #logo {
-  max-height: 90px;
+  margin-top: -20px;
+  max-height: 75px;
 }
 .navbar-brand img {
   margin-right: 20px;
