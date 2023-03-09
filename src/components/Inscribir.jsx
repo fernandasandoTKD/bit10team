@@ -4,6 +4,7 @@ import edit from '../img/lapiz.png';
 import del from '../img/delete.png';
 import plus from '../img/add.png';
 import up from '../img/loop.png';
+import swal from "SweetAlert"
 
 export default function Inscribir() {
   /*INICIANDO Y DECLARANDO EL USESTATE */
@@ -23,7 +24,7 @@ export default function Inscribir() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!formData.name || !formData.age || !formData.email) {
-      alert("Por favor, completa todos los campos.");
+      swal("Por favor, completa todos los campos.");
       return;
     }
     if (editIndex !== null) {
