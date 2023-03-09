@@ -7,22 +7,20 @@ import './css/card.css';
 const CardAbout = (props) => {
   return (
 
-  <div className="col-md-6 col-sm-6 col-lg-3 col-xs-12 ">
-         <div class="box">
-          < div class="box-top">
-             <img
-              src={props.img}
-              className="rounded-circle "
-              alt="profile-image"
-            />
-      <div class="title-flex">
-        <h3 className="box-title">{props.name}</h3>
-        <p className="user-follow-info">{props.taks}</p>
+  <div className="col-md-6  pb-3  col-sm-6 col-lg-3 col-xs-12" >
+    <div class="person  ">
+      <div class="contenedor  ">
+        <div class="container-inner ">
+          <img
+            class="circle"
+            src={props.img}/>
+        </div>
       </div>
-      <p class="description">{props.role}</p>
+      <div class="divider"></div>
+      <div class="name">{props.name}</div>
+      <div class="title">{props.taks}</div> <br />
+      <button class="close"><a href={props.url}target="_blank" rel="noopener noreferrer">Saber más</a></button>
     </div>
-    <a href={props.url} class="button">Saber más</a>
-  </div>
 
   </div>
 

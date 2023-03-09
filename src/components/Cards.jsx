@@ -42,8 +42,8 @@ const Cards = () => {
     ]);
   
     return (
-    <div className="container">
-      <div className="row">
+    <div className="container ">
+      <div className="row ">
         
         {persons.map((person) => {
           return (

@@ -10,6 +10,7 @@ import Image from "../img/b1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
+import bus from '../img/buscar.png';
 
 export const Home = () => {
   // Definimos tres estados iniciales utilizando el hook useState
@@ -173,6 +174,8 @@ export const Home = () => {
         />
       </div>
 
+      {/* Sección de buscador */}
+      <div className="con">
       <div id="search"></div>
       <hr className="light" />
      {/* Crea un formulario para buscar por nombre*/}
@@ -192,20 +195,16 @@ export const Home = () => {
             }}
           />
 
-          <FontAwesomeIcon
-            icon={faSearch}
-            style={{
-              height: "25px",
-              marginRight: "10px",
-              marginTop: "30%",
-              color: "gray",
-            }}
-          />
+          <img src={bus} alt="" 
+          style={{height: "25px",
+          marginRight: "10px",
+          marginTop: "30%",
+          color: "gray",}}/>
         </Form>
       </div>
 
       {/* Sección de contenedor de cartas */}
-      <Container className="pb-2">
+      <Container className="pb-2"  id="cartas">
         <Row>
           {data &&
             data.map((card, index) => (
@@ -215,6 +214,8 @@ export const Home = () => {
             ))}
         </Row>
       </Container>
+
+      </div>
     </section>
   );
 };
