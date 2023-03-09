@@ -20,7 +20,7 @@ export const Nosotros = () => {
       <div className="logos-container">
       <img src={logo2} alt="Logo 2" />
       </div>
-      <Cards className="carta"></Cards>
+      <Cards className="container text-center"></Cards>
     </div>
 
       
