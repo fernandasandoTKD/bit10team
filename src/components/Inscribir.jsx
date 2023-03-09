@@ -5,8 +5,6 @@ import del from '../img/delete.png';
 import plus from '../img/add.png';
 import up from '../img/loop.png';
 
-
-
 export default function Inscribir() {
   /*INICIANDO Y DECLARANDO EL USESTATE */
   const [data, setData] = useState([]);
@@ -24,6 +22,10 @@ export default function Inscribir() {
   /* MANEJADOR ADD */
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (!formData.name || !formData.age || !formData.email) {
+      alert("Por favor, completa todos los campos.");
+      return;
+    }
     if (editIndex !== null) {
       const newData = [...data];
       newData[editIndex] = formData;
@@ -45,11 +47,8 @@ export default function Inscribir() {
     setFormData(data[index]);
     setEditIndex(index);
   };
-
   return (
     <>
-    
-
       <div className="data">
       <h2 >Inscribirse</h2>
       <h2 className="text-center">
@@ -130,8 +129,6 @@ export default function Inscribir() {
         </div>
       </div>
       </div>
-     
-      
     </>
   );
 }
