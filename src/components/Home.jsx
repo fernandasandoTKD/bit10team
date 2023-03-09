@@ -134,7 +134,7 @@ export const Home = () => {
           <h1
             style={{
               paddingLeft: "30px",
-              marginTop: "-80px",
+              marginTop: "10%",
               fontFamily: "Tilt neon",
               color: "black",
               fontWeight: "bold",
@@ -144,26 +144,28 @@ export const Home = () => {
           </h1>
           {/* Descripción del sitio */}
           <h4
-            className="text-center py-4"
+            className="text-center py-4 pt-5"
             style={{ fontFamily: "Tilt neon", color: "black" }}
           >
             Pon a prueba tus conocimientos y participa en los mejores concursos
             y hackathones de programación...
           </h4>
           {/* Botón "Conoce más" */}
-          <Button
+          <Button id="button"
             variant="light"
             size="lg"
             style={{
               fontFamily: "Philosopher",
               fontWeight: "bold",
-              marginLeft: "3rem",
+              marginLeft: "30rem",
               marginTop: "2rem",
             }}
             onClick={handleConoceMasClick}
           >
-            Conoce más
+            Ver concursos
           </Button>
+
+          
         </div>
         {/* Imagen animada del home*/}
         <img
@@ -175,7 +177,7 @@ export const Home = () => {
       </div>
 
       {/* Sección de buscador */}
-      <div className="con">
+      <div className="con align-items-center">
       <div id="search"></div>
       <hr className="light" />
      {/* Crea un formulario para buscar por nombre*/}
@@ -204,11 +206,11 @@ export const Home = () => {
       </div>
 
       {/* Sección de contenedor de cartas */}
-      <Container className="pb-2"  id="cartas">
+      <Container className="pb-2 "  id="cartas">
         <Row>
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={6} sm={6} lg={4} className>
+              <Col key={index} xs={12} md={6} sm={6} lg={4} className="align-items-center">
                 {card}
               </Col>
             ))}
