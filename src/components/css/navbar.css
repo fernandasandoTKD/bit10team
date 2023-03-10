@@ -14,7 +14,7 @@
 }
 
 .navbar-nav {
-  width: 100%;
+  width: auto;
   justify-content: center;
   margin: 0 auto;
 }

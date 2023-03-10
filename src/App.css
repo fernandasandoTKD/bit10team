@@ -119,43 +119,7 @@ h1{
 
 /* Querys */
 
-@media (max-width:768px){
 
-
-  .con{
-    margin-top: -.2rem;
-    background-size: cover;
-    margin-bottom: -.5rem;
-    width: 80vh;
-    height: 150vh;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center;
-   
-  }
-
-  .container{
-    display: flex;
-    flex-wrap: wrap;
- 
-  }
-  .card{
-    width: 10%;
-  }
-  #button{
-    display: none;
-  }
-  h1{  
-    padding-top: 1rem;
-     
-  }
-  
-  .animated-image{
-    margin-top: -4rem;
-  }
-  
- 
-}
 
 @media (max-width:1200px){
   .animated-image{
@@ -175,7 +139,7 @@ h1{
     margin-top: -.2rem;
     background-size: cover;
     margin-bottom: -.5rem;
-    width: 100vh;
+    width: auto;
     height: 150vh;
     align-items: center !important;
     justify-content: center !important;
@@ -211,7 +175,7 @@ h1{
     margin-top: -.2rem;
     background-size: cover;
     margin-bottom: -.5rem;
-    width: 50vh;
+    width: auto;
     height: 100%;
     align-items: center !important;
     justify-content: center !important;

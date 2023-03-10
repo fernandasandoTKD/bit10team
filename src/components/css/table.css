@@ -1,6 +1,6 @@
 .data{
     height: 100vh;
-    margin-top: 6rem;
+    margin-top: 3rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -52,6 +52,9 @@ thead {
 /*responsive*/
 
 @media(max-width: 500px){
+
+    
+
 	.table thead{
 		display: none;
 	}
@@ -86,8 +89,8 @@ thead {
  /* Tamaño por defecto pantallas (1280-1024) */
  @media all and (min-width: 1024px) and (max-width: 1280px) {
     .data{
-        height: 150%;
-        margin-top: 3rem;
+        height: auto;
+        margin-top: rem;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -130,7 +133,7 @@ thead {
   }
   @media  (max-width: 480px){
     .data{
-        height: 100vh;
+        height: auto;
         margin-top: 1rem;
         align-items: center;
         justify-content: center;
