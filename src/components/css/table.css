@@ -1,5 +1,5 @@
 .data{
-    height: 100vh;
+    height: 300vh;
     margin-top: 3rem;
     align-items: center;
     justify-content: center;
@@ -133,7 +133,7 @@ thead {
   }
   @media  (max-width: 480px){
     .data{
-        height: auto;
+        height: 300vh;
         margin-top: 1rem;
         align-items: center;
         justify-content: center;
