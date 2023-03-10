@@ -155,7 +155,7 @@
     @media  (max-width: 480px) {
 
       .nosotros-container {
-        margin-top: 5rem;
+        margin-top: 2rem;
         font-family: "philosopher";
         font-weight: bold;
         color: rgb(0, 0, 0);
@@ -195,7 +195,7 @@
  @media  (max-width: 320px) {
   .nosotros-container {
     
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-family: "philosopher";
     font-weight: bold;
     color: rgb(0, 0, 0);

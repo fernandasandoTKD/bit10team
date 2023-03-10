@@ -92,7 +92,7 @@ export default function Inscribir() {
         <br />
         {/* MONTAMOS LA TABLA */}
         <div className="container">
-          <table className="table table-striped " responsive="sm" striped bordered hover size="sm">
+          <table className="table table-striped display responsive noWrap " responsive bordered >
             <thead>
               
               <tr >
@@ -131,6 +131,7 @@ export default function Inscribir() {
         </div>
       </div>
       </div>
+      
     </>
   );
 }
