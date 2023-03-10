@@ -68,11 +68,13 @@ export const Home = () => {
             fontFamily: "philosopher",
             margin: "8px",
             height: "280px",
-            boxShadow: "0px 0px 10px rgba(0,0,0,0.3)"
+            boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
+            alignItems: "center",
+            justifyContent: "center"
           }}
         >
           <Card.Title className="h2 text-center">{contest.name}</Card.Title>
-          <ListGroup className="list-group-flush">
+          <ListGroup className="list-group-flush ">
             <ListGroup.Item
               style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
             >
@@ -126,20 +128,12 @@ export const Home = () => {
   return (
     <section>
       <div
-        className="d-flex justify-content-between align-items-center text-alig"
+        className="d-flex justify-content-between align-items-center text-align-center"
         style={{ marginTop: "6rem" }}
       >
         <div style={{ textAlign: "left" }}>
         {/* Encabezado principal */}
-          <h1
-            style={{
-              paddingLeft: "30px",
-              marginTop: "10%",
-              fontFamily: "Tilt neon",
-              color: "black",
-              fontWeight: "bold",
-            }}
-          >
+          <h1>
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
           </h1>
           {/* Descripción del sitio */}
@@ -181,20 +175,15 @@ export const Home = () => {
       <div id="search"></div>
       <hr className="light" />
      {/* Crea un formulario para buscar por nombre*/}
-      <div className="d-flex justify-content-center mb-4">
+      <div className="d-flex justify-content-center mb-4" id="form">
         <Form style={{ display: "flex", alignItems: "center" }}> 
           <Form.Control
             type="text"
+            id="input"
             placeholder="Buscar por nombre"
             onChange={handleSearch}
             value={searchTerm}
-            style={{
-              width: "400px",
-              marginRight: "10px",
-              marginTop: "30%",
-              fontFamily: "Tilt neon",
-              boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)",
-            }}
+            
           />
 
           <img src={bus} alt="" 
@@ -206,11 +195,11 @@ export const Home = () => {
       </div>
 
       {/* Sección de contenedor de cartas */}
-      <Container className="pb-2 "  id="cartas">
-        <Row>
+      <Container className="pb-2 flexDirection-center"  id="cartas">
+        <Row className="justify-content-center">
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={6} sm={6} lg={4} className="align-items-center">
+              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center">
                 {card}
               </Col>
             ))}

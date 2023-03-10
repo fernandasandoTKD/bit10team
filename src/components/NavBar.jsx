@@ -11,9 +11,9 @@ import './css/navbar.css';
 export const NavBar = () => {
   return (
     <BrowserRouter>
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className='container-fluid' >
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
+      <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className='container-fluid'  collapseOnSelect>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav" >
         <Navbar.Brand className='img'>
             <img src={logo} alt="Logo" height="70"  id='logo' 
             style={{}}/>
@@ -24,8 +24,6 @@ export const NavBar = () => {
             </Link>
             <Link className="nav-link" to="/Inscribir">Inscribirse</Link>
             <Link className="nav-link" to="/Nosotros">Nosotros</Link>
-            
-            
           </Nav>
         </Navbar.Collapse>
       </Navbar>

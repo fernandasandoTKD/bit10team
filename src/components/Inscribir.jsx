@@ -92,9 +92,10 @@ export default function Inscribir() {
         <br />
         {/* MONTAMOS LA TABLA */}
         <div className="container">
-          <table className="table table-striped">
+          <table className="table table-striped " responsive="sm" striped bordered hover size="sm">
             <thead>
-              <tr>
+              
+              <tr >
                 <th className="fs-4">ID</th>
                 <th className="fs-4">Nombre y Apellido</th>
                 <th className="fs-4">Nacionalidad</th>
