@@ -212,7 +212,7 @@ h1{
     background-size: cover;
     margin-bottom: -.5rem;
     width: 50vh;
-    height: 200vh;
+    height: 100%;
     align-items: center !important;
     justify-content: center !important;
     text-align: center;
