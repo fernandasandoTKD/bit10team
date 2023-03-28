@@ -13,7 +13,8 @@ const Cards = () => {
         taks: "Documentación",
         role:" Lic. en Administración y aprendiz de desarrollo web Frontend con enfasis en React JS. Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo del diseño y desarrollo web en general.",
         img: mari,
-        url: "https://maribsu1.github.io/bit07me/"
+        linkedin: "https://maribsu1.github.io/bit07me/",
+        git: "https://github.com/maribsu1"
       },
       {
         id: 2,
@@ -21,7 +22,8 @@ const Cards = () => {
         taks:"Despliegue y repositorio",
         role: "Profesional desempeñada en el área educativa con experiencia en la enseñanza de lenguajes de programación en las ramas de Frontend y Backend, procesos de ejecución de ciclos y reportes de incidencia, desde la planificación y diseño de interfaz de usuario.",
         img: lu ,
-        url: "https://fernandasandotkd.github.io/bit07me/"
+        linkedin: "https://fernandasandotkd.github.io/bit07me/",
+        git:"https://github.com/fernandasandoTKD"
       },
       {
         id: 3,
@@ -29,7 +31,8 @@ const Cards = () => {
         taks:"Wireframe de alta",
         role: "Aprendiz desarrollo web Front-End Junior con conocimientos en lenguajes de maquetado y de marcado y programación en JavaScript con uso de framework React JS, en continuo aprendizaje de forma didáctica, dispuesta siempre a enfrentar nuevos retos.",
         img: eus,
-        url: "https://eusbeidy.github.io/bit07me/",
+        linkedin: "https://eusbeidy.github.io/bit07me/",
+        git: "https://github.com/eusbeidy"
       },
       {
         id: 4,
@@ -37,7 +40,8 @@ const Cards = () => {
         taks: "Desarrollo CRUD",
         role: "Ecommercer / Software Developer Me dedico al diseño publicitario, estrategias de marketing digital y atención al cliente especialmente en ventas.",
         img: en,
-        url: "https://kiketach.github.io/bit07me/",
+        linkedin: "https://kiketach.github.io/bit07me/",
+        git:"https://github.com/kiketach"
       },
     ]);
   
@@ -53,7 +57,8 @@ const Cards = () => {
               taks={person.taks}
               img={person.img}
               role={person.role}
-              url={person.url}
+              linkedin={person.linkedin}
+              git={person.git}
             />
           );
         })}

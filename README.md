@@ -3,8 +3,8 @@
 
 ##  Descripción :page_with_curl:
 
- Este es el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación, con parametros de filtrado de busqueda y operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actualizar y Eliminar** su contenido.  
-git 
+ En este repositorio encontrará el proyecto final del Bootcamp de programación frontend con especilización en Reac de BIT - Bogota Institute of Thecnology, el cual tiene como finalidad consumir un API que refleja información de concursos y hackathones de programación , en su sección de inicio de ve dicho requerimieto y se evidencia un filtro de búsqueda para esta, la segunda sección es un espacio de operaciones CRUD Create, Read, Update, Delete = **Crear, Leer, Actualizar y Eliminar** para una previa inscripción de participantes y en la última sección encontrá los autores del proyecto.   
+
 ## Tabla de contenido
 1. [Delegados](#delegados)
 2. [Ruta de estilos](#ruta-de-estilos)
@@ -20,7 +20,7 @@ git
 - **Luisa Díaz Sandoval** -  Repositorio y despliegue del proyecto.
 - **Mariangel Socorro** - Documentación. 
 - **Eusbeidy Pérez** - Wireframe de alta.  
-- **Enrique Abril** - Funcionamiendo del CRUD. 
+- **Enrique Abril** - Funcionamiento del CRUD. 
 
 <a name="ruta-de-estilos"></a>
 ## Ruta de estilos 
@@ -90,6 +90,7 @@ _de lo contario dirijase al siguiente_  [link](https://co.video.search.yahoo.com
     - React
     - Bootstrap
     - Font Awesome
+    - React Icons
 
 4. Herramientas complementarias.
     - Trello 
