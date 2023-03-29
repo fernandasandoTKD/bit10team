@@ -12,7 +12,7 @@ const CardAbout = (props) => {
 
     <>
 
-     <div class="col-md-6  pb-3  col-sm-6 col-lg-3 col-xs-12">
+     <div class="col-md-6  pb-3  col-sm-6 col-lg-3 col-xs-12" id='contenedor'>
      
            <div class="image-area">
            

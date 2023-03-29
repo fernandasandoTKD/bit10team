@@ -38,20 +38,7 @@
 
   /* Tamaño por defecto pantallas (1280-1024) */
   @media all and (min-width: 1024px) and (max-width: 1280px) { 
-    .nosotros-container {
-      margin-top: 2rem;
-      font-family: "philosopher";
-      font-weight: bold;
-      color: rgb(0, 0, 0);
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('../wallpaper/bg2.jpg') no-repeat center center fixed;
-      background-size: cover;
-      height: 120vh;
-      display:flex;
-      justify-content: center; 
-      align-items: center;
-      flex-wrap: wrap;  
-      margin-bottom: -0.5rem;
-    }
+    
     
     .text-container {
       margin-top: 2rem;
@@ -78,8 +65,7 @@
   }
   
 
-/* Tamaño tablet horizontal (1024-768) */
-  @media all and (min-width: 768px) and (max-width: 1024px) {
+/* Tamaño tablet horizontal (1024-768) */  @media all and (min-width: 768px) and (max-width: 1024px) {
     .nosotros-container {
       margin-top: 3rem;
       font-family: "philosopher";
@@ -87,7 +73,6 @@
       color: rgb(0, 0, 0);
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('../wallpaper/bg2.jpg') no-repeat center center fixed;
       background-size: cover;
-      height: 150%;
       display:flex;
       justify-content: center; 
       flex-wrap: wrap;  
@@ -96,7 +81,7 @@
    
     }
     .text-container {
-      margin-top: 5rem;
+      margin-top: 3rem;
       margin-left: 1rem;
       margin-right: 1rem; 
       padding-top: 2rem;
@@ -122,7 +107,6 @@
       color: rgb(0, 0, 0);
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(249,151,48, 0.5)), url('../wallpaper/bg2.jpg') no-repeat center center fixed;
       background-size: cover;
-      height: 150%;
       display:flex;
       justify-content: center; 
       flex-wrap: wrap;  
@@ -195,7 +179,6 @@
   /* Tamaño teléfonos (320-menos ) */
  @media  (max-width: 320px) {
   .nosotros-container {
-    
     margin-top: 3rem;
     font-family: "philosopher";
     font-weight: bold;
@@ -223,18 +206,10 @@
     .logos-container img {
       display: none;
     }
-
-    .person {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      width: 280px;
-      justify-content: center;
-      margin: auto;
-    }
-    
    
   }
+
+  
  
   
  

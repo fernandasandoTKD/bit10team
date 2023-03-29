@@ -131,7 +131,7 @@ export const Home = () => {
         className="d-flex justify-content-between align-items-center text-align-center"
         style={{ marginTop: "6rem" }}
       >
-        <div style={{ textAlign: "left" }}>
+        <div  className="typewriter">
         {/* Encabezado principal */}
           <h1>
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
@@ -141,9 +141,11 @@ export const Home = () => {
             className="text-center py-4 pt-5"
             style={{ fontFamily: "Tilt neon", color: "black" }}
           >
-            Pon a prueba tus conocimientos y participa en los mejores concursos
-            y hackathones de programación...
+            Pon a prueba tus conocimientos, enterate, retate y participa en los mejores eventos de programación, para <br />
+            fortalecer tus habilidades propicias para este siglo. 
           </h4>
+          
+
           {/* Botón "Conoce más" */}
           <Button id="button"
             variant="light"
@@ -195,11 +197,11 @@ export const Home = () => {
       </div>
 
       {/* Sección de contenedor de cartas */}
-      <Container className="pb-2 flexDirection-center"  id="cartas">
-        <Row className="justify-content-center">
+      <Container className="pb-2 flexDirection-center d-flex justify-content-center align-items-center " >
+        <Row >
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center">
+              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center text-center d-flex justify-content-center align-items-center ">
                 {card}
               </Col>
             ))}

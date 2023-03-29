@@ -46,17 +46,27 @@
   margin-bottom: -.5rem;
 }
 
-h1 {
-  animation: move 3s;
-  -webkit-animation: move 3s;
-}
+
 
 h1{
-  padding-left: 30px;
+  margin-left: 70px;
   margin-top: 10%;
   font-family: "Tilt neon";
   color:black;
   font-weight: bold;
+}
+
+h4{
+  margin-left: 40px;
+  margin-top: 10%;
+  font-family: "Tilt neon";
+  color:black;
+  font-weight: bold;
+}
+
+h1, h4 {
+  animation: move 3s;
+  -webkit-animation: move 3s;
 }
 
 #input{
@@ -92,16 +102,51 @@ h1{
 
 #button {
   border-radius:5px;
-  color: white;
-  background-color:transparent;
+  font-size: 14px;
   padding: 10px 10px 10px 10px;
 }
-
-#button:hover {
-  animation-name: background-color;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
+#button {
+  margin-left: calc( 50vw - 175px );
+  margin-top: calc( 50vh - 30px );
+  width: 350px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #666;
+  box-shadow: 0 6px 6px #000;
+  outline: none;
 }
+#button:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: #FFDE59;
+  color: #fff;
+  box-shadow: none;
+}
+
+@keyframes gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #fff 0%, #fff 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba(255, 225, 89, 0.2) 24%, #fff 25%, #fff 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba(248, 224, 9, 0.5) 49%, #fff 50%, #fff 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba(228, 212, 70, 0.8) 74%, #fff 75%, #fff 100%);
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(circle at center, #FFDE59 99%, #fff 100%, #fff 100%);
+  }
+}
+
+
 
 @keyframes background-color {
   100%{
@@ -133,6 +178,28 @@ h1{
 
 
 
+   /* Tamaño tablet (768-480) */
+   @media all and (min-width: 480px) and (max-width: 768px) {
+    .con{
+      margin-top: -.2rem;
+      background-size: cover;
+      margin-bottom: -.5rem;
+      width: auto;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center;
+     
+    }
+    #button{
+      display: none;
+    }
+
+    .animated-image{
+      margin-top: -4rem;
+    }
+    
+   }
+
 /* Tamaño tablet horizontal (1024-768) */
 @media all and (min-width: 768px) and (max-width: 1024px){
   .con{
@@ -140,7 +207,6 @@ h1{
     background-size: cover;
     margin-bottom: -.5rem;
     width: auto;
-    height: 150vh;
     align-items: center !important;
     justify-content: center !important;
     text-align: center;
@@ -155,9 +221,7 @@ h1{
   .card{
     width: 10%;
   }
-  #button{
-    display: none;
-  }
+  
   h1{  
     padding-top: 1rem;
      
@@ -169,6 +233,8 @@ h1{
 }
 
 
+   
+
 
 @media (max-width:480px){
   .con{
@@ -176,7 +242,6 @@ h1{
     background-size: cover;
     margin-bottom: -.5rem;
     width: auto;
-    height: 100%;
     align-items: center !important;
     justify-content: center !important;
     text-align: center;
@@ -197,14 +262,17 @@ h1{
 
   }
  
-  h1{
+  h1, h4{
     padding-top: 2rem;
-    font-size: 20px;
+    font-size: 12px;
+    margin-left: 5px;
   }
+
   #cartas{
-    justify-content: center;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    
   }
   .animated-image{
     display: none;
@@ -257,6 +325,7 @@ h1{
     font-size: 20px;
   }
   #cartas{
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -268,3 +337,19 @@ h1{
     display: none;
   }
 }
+
+
+/* Animaciones textos */
+h1 {
+  color: #000;
+  text-shadow:
+    0 0 5px #000,
+    0 0 10px #000,
+    0 0 20px #000,
+    0 0 40px #FFDE59,
+    0 0 80px #FFDE59,
+    0 0 90px #FFDE59,
+    0 0 100px #FFDE59,
+    0 0 150px #FFDE59;
+}
+

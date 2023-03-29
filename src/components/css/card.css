@@ -116,16 +116,22 @@ code {
 
 
 
- 
- 
+
 
 /* Estilos card nuevas */
+
+#contenedor{
+  display: flex;
+
+ 
+}
 .image-area
 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: relative;
+ 
 }
 
 .img-wrapper
@@ -255,3 +261,19 @@ code {
 	color: #fff;
 	background: rgba(255,255,255,0);
 }
+
+ /* Tamaño teléfonos (480-menos ) */
+ @media  (max-width: 480px) {
+  #contenedor{
+    display: flex;
+  
+   
+  }
+  .image-area
+{
+	
+	transform: translate(-50%, -50%);
+	position: relative;
+ 
+}
+ }
