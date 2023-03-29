@@ -106,9 +106,8 @@ h1, h4 {
   padding: 10px 10px 10px 10px;
 }
 #button {
-  margin-left: calc( 50vw - 175px );
-  margin-top: calc( 50vh - 30px );
-  width: 350px;
+
+  width:200px;
   height: 60px;
   border: none;
   border-radius: 5px;
