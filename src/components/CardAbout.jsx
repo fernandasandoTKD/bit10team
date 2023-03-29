@@ -2,6 +2,7 @@ import React from 'react'
 import './css/card.css';
 import { AiFillGithub } from 'react-icons/ai';
 import {AiFillLinkedin} from 'react-icons/ai';
+import {BsFillBriefcaseFill} from 'react-icons/bs';
 
 
 
@@ -21,6 +22,7 @@ const CardAbout = (props) => {
 			<ul>
 				<li><a href={props.git} target="_blank" ><i><AiFillGithub size={20}/></i></a></li>
 				<li><a href={props.linkedin} target="_blank" ><AiFillLinkedin size={20}/></a></li>
+				<li><a href={props.portafolio} target="_blank" ><BsFillBriefcaseFill size={20}/></a></li>
 				
 			</ul>
       

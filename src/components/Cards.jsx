@@ -13,7 +13,8 @@ const Cards = () => {
         taks: "Documentación",
         role:" Lic. en Administración y aprendiz de desarrollo web Frontend con enfasis en React JS. Continuamente aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo del diseño y desarrollo web en general.",
         img: mari,
-        linkedin: "https://maribsu1.github.io/bit07me/",
+        portafolio: "https://maribsu1.github.io/bit07me/",
+        linkedin: "https://www.linkedin.com/in/mariangelsocorro/",
         git: "https://github.com/maribsu1"
       },
       {
@@ -22,7 +23,8 @@ const Cards = () => {
         taks:"Despliegue y repositorio",
         role: "Profesional desempeñada en el área educativa con experiencia en la enseñanza de lenguajes de programación en las ramas de Frontend y Backend, procesos de ejecución de ciclos y reportes de incidencia, desde la planificación y diseño de interfaz de usuario.",
         img: lu ,
-        linkedin: "https://fernandasandotkd.github.io/bit07me/",
+        portafolio: "https://fernandasandotkd.github.io/bit07me/",
+        linkedin:"https://www.linkedin.com/in/lufe-diaz-s/",
         git:"https://github.com/fernandasandoTKD"
       },
       {
@@ -31,7 +33,8 @@ const Cards = () => {
         taks:"Wireframe de alta",
         role: "Aprendiz desarrollo web Front-End Junior con conocimientos en lenguajes de maquetado y de marcado y programación en JavaScript con uso de framework React JS, en continuo aprendizaje de forma didáctica, dispuesta siempre a enfrentar nuevos retos.",
         img: eus,
-        linkedin: "https://eusbeidy.github.io/bit07me/",
+        portafolio: "https://eusbeidy.github.io/bit07me/",
+        linkedin:"https://www.linkedin.com/in/eusbeidy-perez/",
         git: "https://github.com/eusbeidy"
       },
       {
@@ -40,7 +43,8 @@ const Cards = () => {
         taks: "Desarrollo CRUD",
         role: "Ecommercer / Software Developer Me dedico al diseño publicitario, estrategias de marketing digital y atención al cliente especialmente en ventas.",
         img: en,
-        linkedin: "https://kiketach.github.io/bit07me/",
+        portafolio: "https://kiketach.github.io/bit07me/",
+        linkedin:"https://www.linkedin.com/in/enrique-abril-contreras/",
         git:"https://github.com/kiketach"
       },
     ]);
@@ -57,6 +61,7 @@ const Cards = () => {
               taks={person.taks}
               img={person.img}
               role={person.role}
+              portafolio={person.portafolio}
               linkedin={person.linkedin}
               git={person.git}
             />
