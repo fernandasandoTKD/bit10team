@@ -13,7 +13,7 @@
     margin-bottom: -0.5rem;
   }
   
-  .text-container {
+  .text-container  {
     margin-top: 5rem;
     margin-left: 6rem;
     margin-right: 6rem; 
@@ -26,6 +26,7 @@
   .logos-container {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   .logos-container img {

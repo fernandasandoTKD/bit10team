@@ -48,16 +48,17 @@
 
 
 
-h1{
-  margin-left: 70px;
+#h1{
+  margin-left: 50px;
   margin-top: 10%;
   font-family: "Tilt neon";
   color:black;
   font-weight: bold;
+ 
 }
 
 h4{
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 10%;
   font-family: "Tilt neon";
   color:black;
@@ -111,11 +112,11 @@ h1, h4 {
   height: 60px;
   border: none;
   border-radius: 5px;
-  background: #fff;
+  background: #000;
   font-weight: bold;
   font-size: 1.1em;
-  color: #666;
-  box-shadow: 0 6px 6px #000;
+  color: #fff;
+  box-shadow: 0 6px 6px #FFDE59 ;
   outline: none;
 }
 #button:active {
@@ -261,7 +262,7 @@ h1, h4 {
 
   }
  
-  h1, h4{
+  #h1, h4{
     padding-top: 2rem;
     font-size: 12px;
     margin-left: 5px;
@@ -319,7 +320,7 @@ h1, h4 {
 
   }
  
-  h1{
+ #h1{
     padding-top: 2rem;
     font-size: 20px;
   }
@@ -340,15 +341,16 @@ h1, h4 {
 
 /* Animaciones textos */
 h1 {
+  
   color: #000;
   text-shadow:
-    0 0 5px #000,
-    0 0 10px #000,
-    0 0 20px #000,
-    0 0 40px #FFDE59,
-    0 0 80px #FFDE59,
-    0 0 90px #FFDE59,
-    0 0 100px #FFDE59,
-    0 0 150px #FFDE59;
+    0 0 5px #FFDE59,
+    0 0 10px #FFDE59,
+    0 0 20px #FFDE59,
+    0 0 40px #000,
+    0 0 80px #000,
+    0 0 90px #000,
+    0 0 100px #000,
+    0 0 150px #000;
 }
 

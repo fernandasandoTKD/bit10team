@@ -71,24 +71,25 @@ export const Home = () => {
             boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
             alignItems: "center",
             justifyContent: "center"
+            
           }}
         >
-          <Card.Title className="h2 text-center">{contest.name}</Card.Title>
+          <Card.Title className="h1 text-center"  style={{fontSize:"18px" }}>{contest.name}</Card.Title>
           <ListGroup className="list-group-flush ">
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon", fontSize:"16px"}}
             >
-              <li className="h6">Fecha de inicio:</li>
+              <li className="h6" style={{fontSize:"16px" }}>Fecha de inicio:</li>
               {contest.start_time.substring(0, 10)}.
             </ListGroup.Item>
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon",fontSize:"16px"  }}
             >
-              <li className="h6">Duración:</li>
+              <li className="h6" style={{fontSize:"16px" }}>Duración:</li>
               {duration} horas.
             </ListGroup.Item>
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white" }}
+              style={{ backgroundColor: "transparent", color: "white", fontSize:"16px"}}
             >
               <a
                 href={contest.url}
@@ -98,6 +99,7 @@ export const Home = () => {
                 style={{
                   textDecoration: "none",
                   textAlign: "center",
+                  fontSize:"16px"
                 }}
               >
                 Visitar sitio
@@ -131,17 +133,18 @@ export const Home = () => {
         className="d-flex justify-content-between align-items-center text-align-center"
         style={{ marginTop: "6rem" }}
       >
-        <div  className="typewriter">
+        <div >
         {/* Encabezado principal */}
-          <h1>
+          <h1 id="h1" style={{
+              fontSize:"30px",}} >
             ¡Bienvenido a nuestro sitio de concursos y hackathones!
           </h1>
           {/* Descripción del sitio */}
           <h4
             className="text-center py-4 pt-5"
-            style={{ fontFamily: "Tilt neon", color: "black" }}
+            style={{ fontFamily: "Tilt neon", color: "black", fontSize:"20px" }}
           >
-            Pon a prueba tus conocimientos, enterate, retate y participa en los mejores eventos de programación, para <br />
+            Pon a prueba tus conocimientos, enterate, retate y participa en los mejores eventos de programación, para 
             fortalecer tus habilidades propicias para este siglo. 
           </h4>
           
@@ -153,6 +156,7 @@ export const Home = () => {
             style={{
               fontFamily: "Philosopher",
               fontWeight: "bold",
+              fontSize:"20px",
               marginLeft: "30rem",
               marginTop: "2rem",
             }}
@@ -201,7 +205,7 @@ export const Home = () => {
         <Row >
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center text-center d-flex justify-content-center align-items-center ">
+              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center text-center d-flex justify-content-center align-items-center " >
                 {card}
               </Col>
             ))}

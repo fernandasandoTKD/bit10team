@@ -17,6 +17,7 @@
   width: auto;
   justify-content: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .navbar-nav .nav-link {
