@@ -74,7 +74,7 @@ export const Home = () => {
             
           }}
         >
-          <Card.Title className="h1 text-center"  style={{fontSize:"18px" }}>{contest.name}</Card.Title>
+          <Card.Title className="h1 text-center "  style={{fontSize:"18px" }} id="tittle">{contest.name}</Card.Title>
           <ListGroup className="list-group-flush ">
             <ListGroup.Item
               style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon", fontSize:"16px"}}
@@ -89,7 +89,7 @@ export const Home = () => {
               {duration} horas.
             </ListGroup.Item>
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white", fontSize:"16px"}}
+              style={{ backgroundColor: "transparent", color: "white"}}
             >
               <a
                 href={contest.url}
@@ -205,7 +205,7 @@ export const Home = () => {
         <Row >
           {data &&
             data.map((card, index) => (
-              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center text-center d-flex justify-content-center align-items-center " >
+              <Col key={index} md={6}  className="flexDirection-center text-center d-flex justify-content-center align-items-center " >
                 {card}
               </Col>
             ))}

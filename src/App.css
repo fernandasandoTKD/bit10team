@@ -265,7 +265,7 @@ h1, h4 {
   #h1, h4{
     padding-top: 2rem;
     font-size: 12px;
-    margin-left: 5px;
+    margin-left: 0;
   }
 
   #cartas{
@@ -302,9 +302,7 @@ h1, h4 {
   
   }
 
-  .card{
-    max-width:  15rem;
-  }
+
 
   #form{
     width: 100%;
@@ -320,15 +318,17 @@ h1, h4 {
 
   }
  
- #h1{
+  #h1, h4{
     padding-top: 2rem;
-    font-size: 20px;
+    font-size: 10px;
+    padding-left: none;
   }
-  #cartas{
+cartas{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
     
   }
 
@@ -338,19 +338,10 @@ h1, h4 {
   }
 }
 
-
-/* Animaciones textos */
-h1 {
-  
-  color: #000;
-  text-shadow:
-    0 0 5px #FFDE59,
-    0 0 10px #FFDE59,
-    0 0 20px #FFDE59,
-    0 0 40px #000,
-    0 0 80px #000,
-    0 0 90px #000,
-    0 0 100px #000,
-    0 0 150px #000;
+#tittle{
+  font-size: 10px;
 }
+
+
+
 
