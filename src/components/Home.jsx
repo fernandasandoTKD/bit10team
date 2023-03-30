@@ -70,20 +70,21 @@ export const Home = () => {
             height: "280px",
             boxShadow: "0px 0px 10px rgba(0,0,0,0.3)",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            fontSize:"16px"
             
           }}
         >
-          <Card.Title className="h1 text-center "  style={{fontSize:"18px" }} id="tittle">{contest.name}</Card.Title>
+          <Card.Title className="h1 text-center " style={{fontSize:"16px" }}  id="tittle">{contest.name}</Card.Title>
           <ListGroup className="list-group-flush ">
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon", fontSize:"16px"}}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon"}}
             >
-              <li className="h6" style={{fontSize:"16px" }}>Fecha de inicio:</li>
+              <li className="h6" style={{fontSize:"16px" }} >Fecha de inicio:</li>
               {contest.start_time.substring(0, 10)}.
             </ListGroup.Item>
             <ListGroup.Item
-              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon",fontSize:"16px"  }}
+              style={{ backgroundColor: "transparent", color: "white", fontFamily:"tilt neon" }}
             >
               <li className="h6" style={{fontSize:"16px" }}>Duración:</li>
               {duration} horas.
@@ -99,7 +100,7 @@ export const Home = () => {
                 style={{
                   textDecoration: "none",
                   textAlign: "center",
-                  fontSize:"16px"
+                  
                 }}
               >
                 Visitar sitio
@@ -201,11 +202,11 @@ export const Home = () => {
       </div>
 
       {/* Sección de contenedor de cartas */}
-      <Container className="pb-2 flexDirection-center d-flex justify-content-center align-items-center " >
+      <Container className="pb-2 flexDirection-center  " >
         <Row >
           {data &&
             data.map((card, index) => (
-              <Col key={index} md={6}  className="flexDirection-center text-center d-flex justify-content-center align-items-center " >
+              <Col key={index} xs={12} md={6} sm={6} lg={4} className="flexDirection-center text-center d-flex" >
                 {card}
               </Col>
             ))}
